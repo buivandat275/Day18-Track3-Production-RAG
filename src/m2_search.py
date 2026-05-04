@@ -134,15 +134,33 @@ class HybridSearch:
     """Combines BM25 + Dense + RRF. (Đã implement sẵn — dùng classes ở trên)"""
     def __init__(self):
         self.bm25 = BM25Search()
-        self.dense = DenseSearch()
+        self.dense = None
+        self.dense_available = False
+        try:
+            self.dense = DenseSearch()
+        except Exception as exc:
+            print(f"Dense search unavailable, using BM25 only: {exc}")
 
     def index(self, chunks: list[dict]) -> None:
         self.bm25.index(chunks)
-        self.dense.index(chunks)
+        if self.dense is None:
+            return
+        try:
+            self.dense.index(chunks)
+            self.dense_available = True
+        except Exception as exc:
+            self.dense_available = False
+            print(f"Dense indexing failed, using BM25 only: {exc}")
 
     def search(self, query: str, top_k: int = HYBRID_TOP_K) -> list[SearchResult]:
         bm25_results = self.bm25.search(query, top_k=BM25_TOP_K)
-        dense_results = self.dense.search(query, top_k=DENSE_TOP_K)
+        dense_results = []
+        if self.dense is not None and self.dense_available:
+            try:
+                dense_results = self.dense.search(query, top_k=DENSE_TOP_K)
+            except Exception as exc:
+                self.dense_available = False
+                print(f"Dense search failed, using BM25 only: {exc}")
         return reciprocal_rank_fusion([bm25_results, dense_results], top_k=top_k)
 
 

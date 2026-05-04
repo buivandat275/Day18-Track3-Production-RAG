@@ -1,26 +1,28 @@
-# Group Report — Lab 18: Production RAG
+# Group Report - Lab 18: Production RAG
 
-**Nhóm:** [Tên]  
-**Ngày:**
+**Nhóm:** C401 - A4
+**Ngày:** 2026-05-04
 
 ## Thành viên & Phân công
 
-| Tên              | Module            | Hoàn thành | Tests pass |
-| ---------------- | ----------------- | ---------- | ---------- |
-| Nguyễn Minh Quân | M1: Chunking      | ✅          | 13/13      |
-| Trịnh Đức Anh    | M2: Hybrid Search | ✅          | 5/5        |
-| Bùi Văn Đạt      | M3: Reranking     | ✅          | 5/5        |
-| Nguyễn Minh Trí  | M4: Evaluation    | ✅          | 4/4        |
-| Hoàng Quốc Chung | M5: Enrichment    | ✅          | 10/10     |
+| Tên | Module | Hoàn thành | Tests pass |
+| --- | --- | --- | --- |
+| Nguyễn Minh Quân | M1: Chunking | ✅ | 13/13 |
+| Trịnh Đức Anh | M2: Hybrid Search | ✅ | 5/5 |
+| Bùi Văn Đạt | M3: Reranking | ✅ | 5/5 |
+| Nguyễn Minh Trí | M4: Evaluation | ✅ | 4/4 |
+| Hoàng Quốc Chung | M5: Enrichment | ✅ | 10/10 |
 
 ## Kết quả RAGAS
 
-| Metric            | Naive | Production | Δ   |
-| ----------------- | ----- | ---------- | --- |
-| Faithfulness      |       |            |     |
-| Answer Relevancy  |       |            |     |
-| Context Precision |       |            |     |
-| Context Recall    |       |            |     |
+| Metric | Naive | Production | Delta |
+| --- | ---: | ---: | ---: |
+| Faithfulness | 1.0000 | 1.0000 | +0.0000 |
+| Answer Relevancy | 0.9766 | 0.9118 | -0.0648 |
+| Context Precision | 0.5103 | 0.5936 | +0.0834 |
+| Context Recall | 1.0000 | 1.0000 | +0.0000 |
+
+Evaluation đang chạy ở chế độ heuristic fallback. Trong môi trường hiện tại, Qdrant dense search, HuggingFace model và OpenAI generation không truy cập ổn định, nên pipeline tự fallback sang BM25, lexical rerank và extractive answer để vẫn tạo được report.
 
 ## Key Findings
 

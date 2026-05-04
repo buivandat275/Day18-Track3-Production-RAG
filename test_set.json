@@ -1,6 +1,22 @@
 [
   {
-    "question": "hihi ca nha tu tao testset bang com nhe",
-    "ground_truth": "Khong kip tao luon"
+    "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
+    "ground_truth": "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm."
+  },
+  {
+    "question": "Thời gian thử việc tiêu chuẩn là bao lâu?",
+    "ground_truth": "Thời gian thử việc tiêu chuẩn là 60 ngày."
+  },
+  {
+    "question": "Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?",
+    "ground_truth": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày."
+  },
+  {
+    "question": "Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?",
+    "ground_truth": "Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ."
+  },
+  {
+    "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
+    "ground_truth": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu."
   }
 ]
