@@ -1,12 +1,12 @@
 {
   "aggregate": {
     "faithfulness": 1.0,
-    "answer_relevancy": 0.9766233766233766,
-    "context_precision": 0.5102601589443695,
-    "context_recall": 1.0,
+    "answer_relevancy": 0.569940314913284,
+    "context_precision": 0.336931643061674,
+    "context_recall": 0.6705080882758229,
     "evaluation_mode": "heuristic"
   },
-  "num_questions": 5,
+  "num_questions": 20,
   "per_question": [
     {
       "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
@@ -77,6 +77,216 @@
       "answer_relevancy": 1.0,
       "context_precision": 0.543859649122807,
       "context_recall": 1.0
+    },
+    {
+      "question": "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+      "answer": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt.",
+      "contexts": [
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt.",
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu"
+      ],
+      "ground_truth": "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.13043478260869565,
+      "context_precision": 0.24761904761904763,
+      "context_recall": 0.4782608695652174
+    },
+    {
+      "question": "Nhân viên được hưởng tối đa bao nhiêu ngày nghỉ ốm nguyên lương?",
+      "answer": "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+      "contexts": [
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.38636363636363635,
+      "context_precision": 0.30303030303030304,
+      "context_recall": 0.5454545454545454
+    },
+    {
+      "question": "Lao động nữ được nghỉ thai sản trong thời gian bao lâu?",
+      "answer": "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+      "contexts": [
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Thời gian nghỉ thai sản tiêu chuẩn cho lao động nữ là 6 tháng theo quy định của pháp luật và công ty.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3666666666666667,
+      "context_precision": 0.21666666666666667,
+      "context_recall": 0.5
+    },
+    {
+      "question": "Nếu làm mất máy tính xách tay của công ty thì cần xử lý thế nào đầu tiên?",
+      "answer": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+      "contexts": [
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Cần liên hệ ngay lập tức với bộ phận IT để tiến hành khóa thiết bị và xóa dữ liệu từ xa, đồng thời báo cáo cho quản lý trực tiếp.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2967032967032967,
+      "context_precision": 0.24561403508771928,
+      "context_recall": 0.5
+    },
+    {
+      "question": "Hồ sơ thanh toán công tác phí phải được nộp trong vòng bao nhiêu ngày?",
+      "answer": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+      "contexts": [
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Hồ sơ thanh toán công tác phí phải được nộp cho bộ phận Kế toán trong vòng 15 ngày làm việc kể từ ngày kết thúc chuyến công tác.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3484848484848485,
+      "context_precision": 0.2878787878787879,
+      "context_recall": 0.5454545454545454
+    },
+    {
+      "question": "Giờ làm việc tiêu chuẩn của văn phòng bắt đầu và kết thúc lúc mấy giờ?",
+      "answer": "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+      "contexts": [
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Giờ làm việc tiêu chuẩn bắt đầu từ 8:30 sáng và kết thúc vào 5:30 chiều, từ thứ Hai đến thứ Sáu.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4636752136752137,
+      "context_precision": 0.18181818181818182,
+      "context_recall": 0.4444444444444444
+    },
+    {
+      "question": "Làm thêm giờ (Overtime) cần được ai phê duyệt?",
+      "answer": "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+      "contexts": [
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt.",
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân"
+      ],
+      "ground_truth": "Việc làm thêm giờ phải được quản lý trực tiếp phê duyệt trước trên hệ thống quản lý nhân sự.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6736111111111112,
+      "context_precision": 0.4666666666666667,
+      "context_recall": 0.9444444444444444
+    },
+    {
+      "question": "Công ty có quy định gì về trang phục đi làm không?",
+      "answer": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+      "contexts": [
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Trang phục làm việc tại văn phòng là lịch sự, chuyên nghiệp (smart casual), nghiêm cấm mặc quần đùi, dép lê hoặc áo sát nách.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.42234848484848486,
+      "context_precision": 0.1875,
+      "context_recall": 0.2916666666666667
+    },
+    {
+      "question": "Tôi có được dùng USB cá nhân để copy file công việc về nhà làm không?",
+      "answer": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+      "contexts": [
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Nghiêm cấm việc sử dụng USB cá nhân hoặc các thiết bị lưu trữ ngoài không được kiểm duyệt để sao chép dữ liệu của công ty.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.635,
+      "context_precision": 0.375,
+      "context_recall": 0.76
+    },
+    {
+      "question": "Khi muốn xin nghỉ việc, nhân viên chính thức phải báo trước bao nhiêu ngày?",
+      "answer": "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+      "contexts": [
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Nhân viên chính thức có hợp đồng không xác định thời hạn phải gửi email thông báo trước ít nhất 45 ngày làm việc.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5810276679841897,
+      "context_precision": 0.34615384615384615,
+      "context_recall": 0.6956521739130435
+    },
+    {
+      "question": "Tài liệu của công ty được phân loại thành mấy cấp độ bảo mật?",
+      "answer": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+      "contexts": [
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Tài liệu công ty được phân thành 3 cấp độ bảo mật: Công khai, Nội bộ (Internal) và Tuyệt mật (Confidential).",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6458333333333333,
+      "context_precision": 0.3333333333333333,
+      "context_recall": 0.625
+    },
+    {
+      "question": "Đánh giá năng lực nhân viên (Performance Review) diễn ra bao lâu một lần?",
+      "answer": "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+      "contexts": [
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt.",
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân"
+      ],
+      "ground_truth": "Việc đánh giá năng lực nhân viên được thực hiện định kỳ 2 lần một năm, vào giữa năm (tháng 6) và cuối năm (tháng 12).",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4714912280701754,
+      "context_precision": 0.2777777777777778,
+      "context_recall": 0.631578947368421
+    },
+    {
+      "question": "Hạn mức tối đa cho tiền đi lại (taxi/grab) trong một ngày công tác là bao nhiêu?",
+      "answer": "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+      "contexts": [
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu",
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt."
+      ],
+      "ground_truth": "Hạn mức chi phí đi lại tối đa cho một ngày đi công tác trong nước là 500,000 VNĐ.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3,
+      "context_precision": 0.18518518518518517,
+      "context_recall": 0.4666666666666667
+    },
+    {
+      "question": "Khi nghe chuông báo cháy tòa nhà, nhân viên phải làm gì?",
+      "answer": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+      "contexts": [
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt.",
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu"
+      ],
+      "ground_truth": "Khi có báo cháy, nhân viên cần sơ tán ngay lập tức bằng thang bộ và tập trung tại điểm tập kết (Assembly Point) ở tầng trệt, tuyệt đối không dùng thang máy.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3952991452991453,
+      "context_precision": 0.22916666666666666,
+      "context_recall": 0.46153846153846156
+    },
+    {
+      "question": "Tôi có thể tự cài phần mềm Adobe Photoshop bản crack vào máy công ty được không?",
+      "answer": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+      "contexts": [
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung.\n\n## Truy cập VPN\n\nNhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế mã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải.\n\n## Bảo vệ dữ liệu cá nhân",
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ liệu cá nhân ngoài hệ thống được phê duyệt.",
+        "# Sổ tay chính sách nội bộ\n\n## Nghỉ phép năm\n\nNhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ.\n\n## Thử việc\n\nThời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm.\n\n## Chính sách mật khẩu"
+      ],
+      "ground_truth": "Không. Nhân viên không được tự ý cài đặt phần mềm chưa được phê duyệt hoặc phần mềm vi phạm bản quyền. Mọi yêu cầu cài đặt phải được bộ phận IT xử lý.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.39875,
+      "context_precision": 0.30392156862745096,
+      "context_recall": 0.52
     }
   ],
   "failures": []
