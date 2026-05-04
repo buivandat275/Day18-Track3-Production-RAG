@@ -1,9 +1,13 @@
+# Chỉ Qdrant — khớp README (Hybrid Search / Dense). Python + model chạy trên host (pip + .env).
+name: lab18-production-rag
+
 services:
   qdrant:
     image: qdrant/qdrant:v1.12.4
     container_name: lab18-qdrant
+    restart: unless-stopped
     ports:
-      - "6333:6333"
-      - "6334:6334"
+      - "6333:6333" # HTTP API — config.py QDRANT_PORT
+      - "6334:6334" # gRPC (tùy client)
     volumes:
       - ./qdrant_data:/qdrant/storage
