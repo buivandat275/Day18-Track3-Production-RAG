@@ -18,5 +18,65 @@
   {
     "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
     "ground_truth": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu."
+  },
+  {
+    "question": "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+    "ground_truth": "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào."
+  },
+  {
+    "question": "Nhân viên được hưởng tối đa bao nhiêu ngày nghỉ ốm nguyên lương?",
+    "ground_truth": "Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện."
+  },
+  {
+    "question": "Lao động nữ được nghỉ thai sản trong thời gian bao lâu?",
+    "ground_truth": "Thời gian nghỉ thai sản tiêu chuẩn cho lao động nữ là 6 tháng theo quy định của pháp luật và công ty."
+  },
+  {
+    "question": "Nếu làm mất máy tính xách tay của công ty thì cần xử lý thế nào đầu tiên?",
+    "ground_truth": "Cần liên hệ ngay lập tức với bộ phận IT để tiến hành khóa thiết bị và xóa dữ liệu từ xa, đồng thời báo cáo cho quản lý trực tiếp."
+  },
+  {
+    "question": "Hồ sơ thanh toán công tác phí phải được nộp trong vòng bao nhiêu ngày?",
+    "ground_truth": "Hồ sơ thanh toán công tác phí phải được nộp cho bộ phận Kế toán trong vòng 15 ngày làm việc kể từ ngày kết thúc chuyến công tác."
+  },
+  {
+    "question": "Giờ làm việc tiêu chuẩn của văn phòng bắt đầu và kết thúc lúc mấy giờ?",
+    "ground_truth": "Giờ làm việc tiêu chuẩn bắt đầu từ 8:30 sáng và kết thúc vào 5:30 chiều, từ thứ Hai đến thứ Sáu."
+  },
+  {
+    "question": "Làm thêm giờ (Overtime) cần được ai phê duyệt?",
+    "ground_truth": "Việc làm thêm giờ phải được quản lý trực tiếp phê duyệt trước trên hệ thống quản lý nhân sự."
+  },
+  {
+    "question": "Công ty có quy định gì về trang phục đi làm không?",
+    "ground_truth": "Trang phục làm việc tại văn phòng là lịch sự, chuyên nghiệp (smart casual), nghiêm cấm mặc quần đùi, dép lê hoặc áo sát nách."
+  },
+  {
+    "question": "Tôi có được dùng USB cá nhân để copy file công việc về nhà làm không?",
+    "ground_truth": "Nghiêm cấm việc sử dụng USB cá nhân hoặc các thiết bị lưu trữ ngoài không được kiểm duyệt để sao chép dữ liệu của công ty."
+  },
+  {
+    "question": "Khi muốn xin nghỉ việc, nhân viên chính thức phải báo trước bao nhiêu ngày?",
+    "ground_truth": "Nhân viên chính thức có hợp đồng không xác định thời hạn phải gửi email thông báo trước ít nhất 45 ngày làm việc."
+  },
+  {
+    "question": "Tài liệu của công ty được phân loại thành mấy cấp độ bảo mật?",
+    "ground_truth": "Tài liệu công ty được phân thành 3 cấp độ bảo mật: Công khai, Nội bộ (Internal) và Tuyệt mật (Confidential)."
+  },
+  {
+    "question": "Đánh giá năng lực nhân viên (Performance Review) diễn ra bao lâu một lần?",
+    "ground_truth": "Việc đánh giá năng lực nhân viên được thực hiện định kỳ 2 lần một năm, vào giữa năm (tháng 6) và cuối năm (tháng 12)."
+  },
+  {
+    "question": "Hạn mức tối đa cho tiền đi lại (taxi/grab) trong một ngày công tác là bao nhiêu?",
+    "ground_truth": "Hạn mức chi phí đi lại tối đa cho một ngày đi công tác trong nước là 500,000 VNĐ."
+  },
+  {
+    "question": "Khi nghe chuông báo cháy tòa nhà, nhân viên phải làm gì?",
+    "ground_truth": "Khi có báo cháy, nhân viên cần sơ tán ngay lập tức bằng thang bộ và tập trung tại điểm tập kết (Assembly Point) ở tầng trệt, tuyệt đối không dùng thang máy."
+  },
+  {
+    "question": "Tôi có thể tự cài phần mềm Adobe Photoshop bản crack vào máy công ty được không?",
+    "ground_truth": "Không. Nhân viên không được tự ý cài đặt phần mềm chưa được phê duyệt hoặc phần mềm vi phạm bản quyền. Mọi yêu cầu cài đặt phải được bộ phận IT xử lý."
   }
 ]
