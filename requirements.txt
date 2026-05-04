@@ -1,0 +1,24 @@
+# ── Core RAG dependencies ─────────────────────────────────────────────────────
+
+# Vietnamese NLP — word segmentation for BM25
+underthesea>=6.8.4
+
+# BM25 sparse retrieval
+rank-bm25>=0.2.2
+
+# Dense embedding model (BAAI/bge-m3 và các SentenceTransformer models)
+sentence-transformers>=3.0.0
+
+# Vector database client
+qdrant-client>=1.9.0
+
+# Reranker (Cohere) — dùng ở m3_rerank.py
+cohere>=5.5.0
+
+# OpenAI (generation / eval) — dùng ở m4_eval.py
+openai>=1.30.0
+
+# Utilities
+python-dotenv>=1.0.0
+numpy>=1.26.0
+tqdm>=4.66.0
