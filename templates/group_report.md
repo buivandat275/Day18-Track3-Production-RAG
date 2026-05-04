@@ -1,13 +1,13 @@
 # Group Report — Lab 18
 
-**Nhóm:** [Tên]  
+**Nhóm:** [C401-A4]  
 **Ngày:**
 
 ## Thành viên & Module
 
 | Tên | Module | Hoàn thành | Tests pass |
 |-----|--------|-----------|-----------|
-| | M1: Chunking | ☐ | /8 |
+|Nguyễn Minh Quân| M1: Chunking | ✅ | 13/13 |
 | | M2: Search | ☐ | /5 |
 | | M3: Rerank | ☐ | /5 |
 | | M4: Eval | ☐ | /4 |
@@ -24,6 +24,7 @@
 ## Key Findings
 
 1. **Biggest improvement:**
+> M1:  đã implement 3 chiến lược chunking nâng cao: semantic chunking, hierarchical parent-child chunking và structure-aware chunking. Hierarchical chunking tạo parent chunks để giữ ngữ cảnh rộng và child chunks để retrieval chính xác hơn, mỗi child có `parent_id` trỏ về parent. Structure-aware chunking giữ nguyên markdown headers và lưu `section` trong metadata.
 2. **Biggest challenge:**
 3. **Surprise finding:**
 
