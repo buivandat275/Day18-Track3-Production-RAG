@@ -34,7 +34,7 @@ Evaluation đang chạy ở chế độ heuristic fallback. Trong môi trường
 > M3 (reranking — Bùi Văn Đạt): triển khai `CrossEncoderReranker` với `sentence_transformers.CrossEncoder`, model mặc định `BAAI/bge-reranker-v2-m3`, nhận ~top-20 đoạn từ hybrid search và trả về top-k (theo `config.RERANK_TOP_K`, thường 3) đã sắp xếp theo `rerank_score` giảm dần; mỗi kết quả có `original_score`, `metadata`, `rank`. Thêm `FlashrankReranker` (tùy chọn, `pip install flashrank`) làm lựa chọn rerank nhẹ trên CPU. Hàm `benchmark_reranker()` đo latency trung bình / min / max (ms) qua nhiều lần chạy để báo cáo và so sánh với yêu cầu lab (< 5s sau khi model đã load).
 >
 > M4 (evaluation — Nguyễn Minh Trí): triển khai đánh giá bằng **RAGAS**, đánh giá 4 metrics: faithfulness, answer_relevancy, context_precision, context_recall. Sử dụng `ChatOpenAI` làm LLM đánh giá (gpt-4o-mini), kết quả trả về dưới dạng `EvalResult`, có thể convert sang pandas để xử lý. Sử dụng `ragas.evaluate` để đánh giá toàn bộ dataset, kết quả trả về `Dataset` chứa các metrics. Phân tích lỗi bằng `failure_analysis` để tìm ra các câu trả lời kém chất lượng và đưa ra đề xuất cải thiện.
-
+> 
 2. **Biggest challenge:**
 3. **Surprise finding:**
 
