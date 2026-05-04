@@ -1,3 +1,6 @@
 [
-  {"question": "hihi cả nhà tự tạo testset bằng cơm nhé", "ground_truth": "Không kịp tạo luôn"},
+  {
+    "question": "hihi ca nha tu tao testset bang com nhe",
+    "ground_truth": "Khong kip tao luon"
+  }
 ]
