@@ -1,21 +1,38 @@
 """
 Module 5: Enrichment Pipeline
 ==============================
-Làm giàu chunks TRƯỚC khi embed: Summarize, HyQA, Contextual Prepend, Auto Metadata.
+Enrich chunks before embedding: summarization, HyQA, contextual prepend,
+and automatic metadata extraction.
 
 Test: pytest tests/test_m5.py
 """
 
-import os, sys
-from dataclasses import dataclass, field
+import json
+import os
+import re
+import sys
+import unicodedata
+from dataclasses import dataclass
+
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import OPENAI_API_KEY
 
 
+OPENAI_MODEL = os.getenv("OPENAI_ENRICHMENT_MODEL", "gpt-4o-mini")
+_OPENAI_FAILED = False
+
+
 @dataclass
 class EnrichedChunk:
-    """Chunk đã được làm giàu."""
+    """A chunk with retrieval-oriented enrichment fields."""
+
     original_text: str
     enriched_text: str
     summary: str
@@ -24,143 +41,267 @@ class EnrichedChunk:
     method: str  # "contextual", "summary", "hyqa", "full"
 
 
-# ─── Technique 1: Chunk Summarization ────────────────────
+def _has_openai_key() -> bool:
+    key = (OPENAI_API_KEY or "").strip()
+    if not key:
+        return False
+    placeholders = {"sk-...", "...", "your-api-key", "your_openai_api_key"}
+    return key.lower() not in placeholders and not key.endswith("...")
+
+
+def _call_openai(system_prompt: str, user_prompt: str, max_tokens: int) -> str | None:
+    """Best-effort OpenAI call; falls back silently when unavailable."""
+    global _OPENAI_FAILED
+
+    if _OPENAI_FAILED or not _has_openai_key():
+        return None
+
+    try:
+        from openai import OpenAI
+
+        client = OpenAI(api_key=OPENAI_API_KEY, timeout=8.0)
+        response = client.chat.completions.create(
+            model=OPENAI_MODEL,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            temperature=0,
+            max_tokens=max_tokens,
+        )
+        content = response.choices[0].message.content
+        return content.strip() if content else None
+    except Exception:
+        _OPENAI_FAILED = True
+        return None
+
+
+def _split_sentences(text: str) -> list[str]:
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if not text:
+        return []
+    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+    return sentences or [text]
+
+
+def _clean_lines(text: str, limit: int | None = None) -> list[str]:
+    lines = []
+    for line in (text or "").splitlines():
+        line = re.sub(r"^\s*[-*+\d.)]+\s*", "", line).strip()
+        if line:
+            lines.append(line)
+    return lines[:limit] if limit is not None else lines
+
+
+def _strip_accents(text: str) -> str:
+    normalized = unicodedata.normalize("NFD", text or "")
+    return "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
+
+
+def _infer_metadata(text: str) -> dict:
+    lower = (text or "").lower()
+    normalized_lower = _strip_accents(lower)
+
+    rules = [
+        (
+            ("nghỉ", "phép", "12"),
+            "chính sách nghỉ phép",
+            "hr",
+            ["nhân viên", "nghỉ phép năm"],
+        ),
+        (
+            ("thử việc", "trial", "probation", "60"),
+            "thử việc",
+            "hr",
+            ["nhân viên", "thử việc"],
+        ),
+        (
+            ("mật khẩu", "password", "90", "vpn", "wireguard", "aes"),
+            "an toàn thông tin",
+            "it",
+            ["mật khẩu", "VPN"],
+        ),
+        (
+            ("dữ liệu", "data", "privacy", "personal"),
+            "bảo vệ dữ liệu cá nhân",
+            "policy",
+            ["dữ liệu cá nhân", "quyền riêng tư"],
+        ),
+        (
+            ("báo cáo", "tài chính", "finance", "revenue", "profit"),
+            "báo cáo tài chính",
+            "finance",
+            ["báo cáo tài chính"],
+        ),
+    ]
+
+    for keywords, topic, category, entities in rules:
+        if any(keyword in lower or _strip_accents(keyword) in normalized_lower for keyword in keywords):
+            return {
+                "topic": topic,
+                "entities": entities,
+                "category": category,
+                "language": "vi" if any(ord(ch) > 127 for ch in text or "") else "en",
+            }
+
+    return {
+        "topic": "thông tin chung",
+        "entities": [],
+        "category": "policy",
+        "language": "vi" if any(ord(ch) > 127 for ch in text or "") else "en",
+    }
 
 
 def summarize_chunk(text: str) -> str:
     """
-    Tạo summary ngắn cho chunk.
-    Embed summary thay vì (hoặc cùng với) raw chunk → giảm noise.
+    Create a short summary for a chunk.
 
-    Args:
-        text: Raw chunk text.
-
-    Returns:
-        Summary string (2-3 câu).
+    Uses OpenAI when available; otherwise returns an extractive summary so the
+    enrichment pipeline remains usable offline.
     """
-    # TODO: Implement chunk summarization
-    # Option A (với OpenAI):
-    #   from openai import OpenAI
-    #   client = OpenAI()
-    #   resp = client.chat.completions.create(
-    #       model="gpt-4o-mini",
-    #       messages=[
-    #           {"role": "system", "content": "Tóm tắt đoạn văn sau trong 2-3 câu ngắn gọn bằng tiếng Việt."},
-    #           {"role": "user", "content": text},
-    #       ],
-    #       max_tokens=150,
-    #   )
-    #   return resp.choices[0].message.content.strip()
-    #
-    # Option B (không cần API — extractive):
-    #   sentences = text.split(". ")
-    #   return ". ".join(sentences[:2]) + "."  # Lấy 2 câu đầu
-    return ""
+    text = (text or "").strip()
+    if not text:
+        return ""
 
+    llm_summary = _call_openai(
+        "Tóm tắt đoạn văn bằng tiếng Việt có đầy đủ dấu trong 2 câu ngắn gọn. "
+        "Giữ lại các con số và thuật ngữ chính sách quan trọng.",
+        text,
+        max_tokens=150,
+    )
+    if llm_summary:
+        return llm_summary
 
-# ─── Technique 2: Hypothesis Question-Answer (HyQA) ─────
+    sentences = _split_sentences(text)
+    summary = " ".join(sentences[:2]).strip()
+    if len(summary) > 500:
+        summary = summary[:497].rstrip() + "..."
+    return summary
 
 
 def generate_hypothesis_questions(text: str, n_questions: int = 3) -> list[str]:
     """
-    Generate câu hỏi mà chunk có thể trả lời.
-    Index cả questions lẫn chunk → query match tốt hơn (bridge vocabulary gap).
+    Generate questions that the chunk can answer.
 
-    Args:
-        text: Raw chunk text.
-        n_questions: Số câu hỏi cần generate.
-
-    Returns:
-        List of question strings.
+    HyQA helps bridge vocabulary mismatch between user queries and document text.
     """
-    # TODO: Implement hypothesis question generation
-    # 1. from openai import OpenAI
-    #    client = OpenAI()
-    # 2. resp = client.chat.completions.create(
-    #        model="gpt-4o-mini",
-    #        messages=[
-    #            {"role": "system", "content": f"Dựa trên đoạn văn, tạo {n_questions} câu hỏi mà đoạn văn có thể trả lời. Trả về mỗi câu hỏi trên 1 dòng."},
-    #            {"role": "user", "content": text},
-    #        ],
-    #        max_tokens=200,
-    #    )
-    # 3. questions = resp.choices[0].message.content.strip().split("\n")
-    # 4. return [q.strip().lstrip("0123456789.-) ") for q in questions if q.strip()]
-    #
-    # Tại sao: User hỏi "nghỉ phép bao nhiêu ngày?" nhưng doc viết
-    # "12 ngày làm việc mỗi năm" → vocabulary gap. HyQA bridge gap này
-    # bằng cách index câu hỏi "Nhân viên được nghỉ bao nhiêu ngày?" cùng chunk.
-    return []
+    if n_questions <= 0:
+        return []
 
+    text = (text or "").strip()
+    if not text:
+        return []
 
-# ─── Technique 3: Contextual Prepend (Anthropic style) ──
+    llm_questions = _call_openai(
+        f"Dựa trên đoạn văn, viết {n_questions} câu hỏi tiếng Việt có đầy đủ dấu "
+        "mà đoạn văn có thể trả lời. Trả về mỗi câu hỏi trên một dòng.",
+        text,
+        max_tokens=220,
+    )
+    if llm_questions:
+        questions = _clean_lines(llm_questions, limit=n_questions)
+        if questions:
+            return questions
+
+    meta = _infer_metadata(text)
+    topic = meta["topic"]
+    category = meta["category"]
+
+    if category == "hr" and topic == "chính sách nghỉ phép":
+        questions = [
+            "Nhân viên được nghỉ phép bao nhiêu ngày?",
+            "Quy định về nghỉ phép năm là gì?",
+            "Ngày nghỉ phép tăng theo thâm niên như thế nào?",
+        ]
+    elif category == "hr" and topic == "thử việc":
+        questions = [
+            "Thời gian thử việc là bao nhiêu ngày?",
+            "Quy định về thử việc của nhân viên là gì?",
+            "Nhân viên cần biết gì về giai đoạn thử việc?",
+        ]
+    elif category == "it":
+        questions = [
+            "Quy định bảo mật công nghệ thông tin là gì?",
+            "Mật khẩu cần thay đổi sau bao nhiêu ngày?",
+            "VPN hoặc tài khoản truy cập được quy định như thế nào?",
+        ]
+    elif category == "finance":
+        questions = [
+            "Đoạn này nói về thông tin tài chính nào?",
+            "Báo cáo tài chính đề cập đến chỉ số nào?",
+            "Nội dung tài chính quan trọng trong đoạn là gì?",
+        ]
+    else:
+        questions = [
+            f"Đoạn văn này nói về {topic} như thế nào?",
+            "Thông tin quan trọng trong đoạn văn là gì?",
+            "Người đọc cần nắm quy định nào từ đoạn này?",
+        ]
+
+    return questions[:n_questions]
 
 
 def contextual_prepend(text: str, document_title: str = "") -> str:
     """
-    Prepend context giải thích chunk nằm ở đâu trong document.
-    Anthropic benchmark: giảm 49% retrieval failure (alone).
-
-    Args:
-        text: Raw chunk text.
-        document_title: Tên document gốc.
-
-    Returns:
-        Text với context prepended.
+    Prepend a short retrieval context while preserving the original text.
     """
-    # TODO: Implement contextual prepend
-    # 1. from openai import OpenAI
-    #    client = OpenAI()
-    # 2. resp = client.chat.completions.create(
-    #        model="gpt-4o-mini",
-    #        messages=[
-    #            {"role": "system", "content": "Viết 1 câu ngắn mô tả đoạn văn này nằm ở đâu trong tài liệu và nói về chủ đề gì. Chỉ trả về 1 câu."},
-    #            {"role": "user", "content": f"Tài liệu: {document_title}\n\nĐoạn văn:\n{text}"},
-    #        ],
-    #        max_tokens=80,
-    #    )
-    # 3. context = resp.choices[0].message.content.strip()
-    # 4. return f"{context}\n\n{text}"
-    #
-    # Ví dụ output:
-    #   "Trích từ Chương 3 - Chính sách nghỉ phép, Sổ tay VinUni 2024.
-    #    Nhân viên chính thức được nghỉ phép năm 12 ngày..."
-    return text
+    text = (text or "").strip()
+    title = (document_title or "tài liệu nguồn").strip()
 
+    llm_context = _call_openai(
+        "Viết đúng một câu tiếng Việt có đầy đủ dấu, mô tả đoạn này thuộc tài liệu "
+        "nào và nói về chủ đề gì. Không trả lời nội dung của đoạn.",
+        f"Tài liệu: {title}\n\nĐoạn văn:\n{text}",
+        max_tokens=80,
+    )
 
-# ─── Technique 4: Auto Metadata Extraction ──────────────
+    if llm_context:
+        context = llm_context
+    else:
+        meta = _infer_metadata(text)
+        context = f"Trích từ {title}, đoạn này nói về {meta['topic']}."
+
+    return f"{context}\n\n{text}" if text else context
 
 
 def extract_metadata(text: str) -> dict:
     """
-    LLM extract metadata tự động: topic, entities, date_range, category.
-
-    Args:
-        text: Raw chunk text.
-
-    Returns:
-        Dict with extracted metadata fields.
+    Extract retrieval metadata: topic, entities, category, and language.
     """
-    # TODO: Implement auto metadata extraction
-    # 1. from openai import OpenAI
-    #    import json
-    #    client = OpenAI()
-    # 2. resp = client.chat.completions.create(
-    #        model="gpt-4o-mini",
-    #        messages=[
-    #            {"role": "system", "content": 'Trích xuất metadata từ đoạn văn. Trả về JSON: {"topic": "...", "entities": ["..."], "category": "policy|hr|it|finance", "language": "vi|en"}'},
-    #            {"role": "user", "content": text},
-    #        ],
-    #        max_tokens=150,
-    #    )
-    # 3. return json.loads(resp.choices[0].message.content)
-    #
-    # Metadata này gắn vào chunk → enable rich filtering khi search
-    # VD: filter category="policy" + topic="nghỉ phép" → precision tăng
-    return {}
+    text = (text or "").strip()
+    if not text:
+        return {
+            "topic": "trống",
+            "entities": [],
+            "category": "policy",
+            "language": "unknown",
+        }
 
+    llm_metadata = _call_openai(
+        'Trích xuất metadata từ đoạn văn. Trả về JSON hợp lệ với các khóa: '
+        '"topic", "entities", "category", "language". Các giá trị tiếng Việt '
+        'như "topic" và "entities" phải có đầy đủ dấu. "category" phải là một '
+        'trong các giá trị "policy", "hr", "it", "finance".',
+        text,
+        max_tokens=180,
+    )
+    if llm_metadata:
+        match = re.search(r"\{.*\}", llm_metadata, flags=re.DOTALL)
+        raw_json = match.group(0) if match else llm_metadata
+        try:
+            data = json.loads(raw_json)
+            if isinstance(data, dict):
+                fallback = _infer_metadata(text)
+                return {
+                    "topic": str(data.get("topic") or fallback["topic"]),
+                    "entities": data.get("entities") if isinstance(data.get("entities"), list) else fallback["entities"],
+                    "category": str(data.get("category") or fallback["category"]),
+                    "language": str(data.get("language") or fallback["language"]),
+                }
+        except json.JSONDecodeError:
+            pass
 
-# ─── Full Enrichment Pipeline ────────────────────────────
+    return _infer_metadata(text)
 
 
 def enrich_chunks(
@@ -168,59 +309,64 @@ def enrich_chunks(
     methods: list[str] | None = None,
 ) -> list[EnrichedChunk]:
     """
-    Chạy enrichment pipeline trên danh sách chunks.
-
-    Args:
-        chunks: List of {"text": str, "metadata": dict}
-        methods: List of methods to apply. Default: ["contextual", "hyqa", "metadata"]
-                 Options: "summary", "hyqa", "contextual", "metadata", "full"
-
-    Returns:
-        List of EnrichedChunk objects.
+    Run enrichment over a list of {"text": str, "metadata": dict} chunks.
     """
     if methods is None:
         methods = ["contextual", "hyqa", "metadata"]
 
+    normalized_methods = [m.lower() for m in methods]
+    use_full = "full" in normalized_methods
+    method_label = "+".join(normalized_methods) if normalized_methods else "raw"
     enriched = []
 
-    # TODO: Implement enrichment pipeline
-    # For each chunk:
-    #   1. summary = summarize_chunk(chunk["text"]) if "summary" in methods or "full" in methods
-    #   2. questions = generate_hypothesis_questions(chunk["text"]) if "hyqa" in methods or "full" in methods
-    #   3. enriched_text = contextual_prepend(chunk["text"], chunk["metadata"].get("source", ""))
-    #      if "contextual" in methods or "full" in methods
-    #   4. auto_meta = extract_metadata(chunk["text"]) if "metadata" in methods or "full" in methods
-    #   5. Create EnrichedChunk(
-    #          original_text=chunk["text"],
-    #          enriched_text=enriched_text or chunk["text"],
-    #          summary=summary or "",
-    #          hypothesis_questions=questions or [],
-    #          auto_metadata={**chunk["metadata"], **auto_meta},
-    #          method="+".join(methods),
-    #      )
-    #
-    # Lưu ý: Enrichment = one-time cost (offline). Dùng model rẻ (gpt-4o-mini).
-    # ROI cao vì cải thiện MỌI query sau đó.
+    for chunk in chunks:
+        text = str(chunk.get("text", "") if isinstance(chunk, dict) else "")
+        metadata = dict(chunk.get("metadata") or {}) if isinstance(chunk, dict) else {}
+
+        summary = summarize_chunk(text) if use_full or "summary" in normalized_methods else ""
+        questions = (
+            generate_hypothesis_questions(text)
+            if use_full or "hyqa" in normalized_methods
+            else []
+        )
+        enriched_text = (
+            contextual_prepend(text, metadata.get("source", ""))
+            if use_full or "contextual" in normalized_methods
+            else text
+        )
+        auto_meta = extract_metadata(text) if use_full or "metadata" in normalized_methods else {}
+
+        extra_sections = []
+        if summary:
+            extra_sections.append(f"Tóm tắt: {summary}")
+        if questions:
+            extra_sections.append("Câu hỏi giả định:\n" + "\n".join(questions))
+        if extra_sections:
+            enriched_text = "\n\n".join([enriched_text, *extra_sections])
+
+        enriched.append(
+            EnrichedChunk(
+                original_text=text,
+                enriched_text=enriched_text,
+                summary=summary,
+                hypothesis_questions=questions,
+                auto_metadata={**metadata, **auto_meta},
+                method=method_label,
+            )
+        )
 
     return enriched
 
 
-# ─── Main ────────────────────────────────────────────────
-
 if __name__ == "__main__":
-    sample = "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác."
+    sample = (
+        "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. "
+        "Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác."
+    )
 
-    print("=== Enrichment Pipeline Demo ===\n")
-    print(f"Original: {sample}\n")
-
-    s = summarize_chunk(sample)
-    print(f"Summary: {s}\n")
-
-    qs = generate_hypothesis_questions(sample)
-    print(f"HyQA questions: {qs}\n")
-
-    ctx = contextual_prepend(sample, "Sổ tay nhân viên VinUni 2024")
-    print(f"Contextual: {ctx}\n")
-
-    meta = extract_metadata(sample)
-    print(f"Auto metadata: {meta}")
+    print("=== Demo Pipeline Làm Giàu Chunk ===\n")
+    print(f"Văn bản gốc: {sample}\n")
+    print(f"Tóm tắt: {summarize_chunk(sample)}\n")
+    print(f"Câu hỏi HyQA: {generate_hypothesis_questions(sample)}\n")
+    print(f"Ngữ cảnh: {contextual_prepend(sample, 'Sổ tay nhân viên')}\n")
+    print(f"Metadata tự động: {extract_metadata(sample)}")
