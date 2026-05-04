@@ -5,6 +5,7 @@
 
 ## Thành viên & Phân công
 
+<<<<<<< Updated upstream
 | Tên              | Module            | Hoàn thành | Tests pass |
 | ---------------- | ----------------- | ---------- | ---------- |
 | Nguyễn Minh Quân | M1: Chunking      | ✅          | 13/13      |
@@ -12,6 +13,14 @@
 | Bùi Văn Đạt      | M3: Reranking     | ✅          | 5/5        |
 |                  | M4: Evaluation    | ☐          | /4         |
 | Hoàng Quốc Chung | M5: Enrichment    | ✅          | 10/10     |
+=======
+| Tên | Module | Hoàn thành | Tests pass |
+|-----|--------|-----------|-----------|
+|Nguyễn Minh Quân | M1: Chunking | ☐ | /8 |
+| | M2: Hybrid Search | ☐ | /5 |
+| | M3: Reranking | ☐ | /5 |
+| Nguyễn Minh Trí | M4: Evaluation | ☐ | /4 |
+>>>>>>> Stashed changes
 
 ## Kết quả RAGAS
 
