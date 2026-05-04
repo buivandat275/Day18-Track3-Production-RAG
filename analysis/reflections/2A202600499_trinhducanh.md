@@ -16,13 +16,12 @@
 
 - Khái niệm mới nhất: **RRF** để hợp nhất hai (hoặc nhiều) danh sách đã xếp hạng mà không cần chuẩn hóa điểm số giữa BM25 và cosine similarity; cách **BM25Okapi** hoạt động trên corpus đã tokenize; tích hợp **Qdrant** với vector cosine cùng `SentenceTransformer` (`BAAI/bge-m3`).
 - Điều bất ngờ nhất: Chỉ cần **khóa gộp theo `text`** là đủ cho lab-scale, nhưng ở production cần id chunk ổn định nếu hai chunk trùng nội dung khác metadata — điều này ảnh hưởng cách thiết kế payload Qdrant sau này.
-- Kết nối với bài giảng (slide nào): Phần **hybrid retrieval** / **sparse + dense** và **fusion of rankers** trong chương Production RAG (tương ứng nội dung về BM25 + dense vectors và các chiến lược merge rank).
-
+- Kết nối với bài giảng (slide nào): slide **17,18,21** Phần **hybrid search** / **BM25 or dense** và **vectorDB cho production RAG** 
 ## 3. Khó khăn & Cách giải quyết
 
 - Khó khăn lớn nhất: BM25 trên tiếng Việt **không tách từ** thì token rất thô, dễ miss khớp truy vấn tự nhiên; đồng thời cần đảm bảo môi trường chạy được khi **chưa cài** `underthesea`.
 - Cách giải quyết: Dùng `underthesea.word_tokenize(..., format="text")` rồi `.split()` cho cả document và query; bọc `try/except` và **fallback** trả về chuỗi gốc nếu thư viện lỗi hoặc chưa có. Kiểm thử với các truy vấn tiếng Việt có dấu trong `test_m2.py`.
-- Thời gian debug: *(điền thực tế của bạn, ví dụ: ~2–4 giờ cho tích hợp Qdrant + chỉnh tokenize + chạy pytest)*
+- Thời gian debug:10'
 
 ## 4. Nếu làm lại
 
@@ -38,4 +37,3 @@
 | Teamwork | 5 |
 | Problem solving | 5 |
 
-*(Điều chỉnh điểm tự chấm và mục 3 “Thời gian debug” cho sát thực tế làm bài của bạn.)*
