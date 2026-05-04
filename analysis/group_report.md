@@ -11,6 +11,7 @@
 | Trịnh Đức Anh    | M2: Hybrid Search | ✅          | 5/5        |
 | Bùi Văn Đạt      | M3: Reranking     | ✅          | 5/5        |
 |                  | M4: Evaluation    | ☐          | /4         |
+| Hoàng Quốc Chung | M5: Enrichment    | ✅          | 10/10     |
 
 ## Kết quả RAGAS
 

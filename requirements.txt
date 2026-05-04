@@ -24,4 +24,5 @@ numpy>=1.26.0
 tqdm>=4.66.0
 pytest
 ruff
+openai
 pypdf
