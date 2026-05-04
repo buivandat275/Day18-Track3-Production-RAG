@@ -15,14 +15,16 @@
 
 ## Kết quả RAGAS
 
+Nguồn số liệu: `reports/naive_baseline_report.json` (naive) và `reports/ragas_report.json` (production), **20 câu**, `evaluation_mode: heuristic`.
+
 | Metric | Naive | Production | Delta |
 | --- | ---: | ---: | ---: |
-| Faithfulness | 1.0000 | 1.0000 | +0.0000 |
-| Answer Relevancy | 0.9766 | 0.9118 | -0.0648 |
-| Context Precision | 0.5103 | 0.5936 | +0.0834 |
-| Context Recall | 1.0000 | 1.0000 | +0.0000 |
+| Faithfulness | 1.0000 | 0.7508 | -0.2492 |
+| Answer Relevancy | 0.5699 | 0.2611 | -0.3089 |
+| Context Precision | 0.3369 | 0.3877 | +0.0508 |
+| Context Recall | 0.6705 | 0.6544 | -0.0162 |
 
-Evaluation đang chạy ở chế độ heuristic fallback. Trong môi trường hiện tại, Qdrant dense search, HuggingFace model và OpenAI generation không truy cập ổn định, nên pipeline tự fallback sang BM25, lexical rerank và extractive answer để vẫn tạo được report.
+Delta = Production − Naive. **Context Precision** tăng nhẹ khi dùng pipeline production (chunking nâng cao + hybrid + rerank + enrichment), nhưng các câu **ngoài corpus** trong `test_set.json` mở rộng làm **answer relevancy** và **faithfulness** aggregate giảm so với naive (naive vẫn trả lời dài từ context trộn nhiều section nên heuristic đôi khi “đủ điểm” hơn câu trả lời ngắn / “Không tìm thấy” của production).
 
 ## Key Findings
 
