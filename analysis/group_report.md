@@ -8,7 +8,7 @@
 | Tên | Module | Hoàn thành | Tests pass |
 |-----|--------|-----------|-----------|
 |Nguyễn Minh Quân | M1: Chunking | ☐ | /8 |
-| | M2: Hybrid Search | ☐ | /5 |
+|Trịnh Đức AnhAnh| M2: Hybrid Search | 5 | /5 |
 | | M3: Reranking | ☐ | /5 |
 | | M4: Evaluation | ☐ | /4 |
 
