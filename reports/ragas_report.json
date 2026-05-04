@@ -1,0 +1,134 @@
+{
+  "aggregate": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.9117748917748918,
+    "context_precision": 0.5936478482531113,
+    "context_recall": 1.0,
+    "evaluation_mode": "heuristic"
+  },
+  "num_questions": 5,
+  "per_question": [
+    {
+      "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
+      "answer": "# Sổ tay chính sách nội bộ ## Nghỉ phép năm Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "contexts": [
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\n# Sổ tay chính sách nội bộ ## Nghỉ phép năm Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ. ## Thử\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?",
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\nđổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung. ## Truy cập VPN Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?",
+        "Trích từ sample_policy.md, đoạn này nói về thử việc.\n\nviệc Thời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm. ## Chính sách mật khẩu Mật khẩu tài khoản công ty phải được thay\n\nCâu hỏi giả định:\nThời gian thử việc là bao nhiêu ngày?\nQuy định về thử việc của nhân viên là gì?\nNhân viên cần biết gì về giai đoạn thử việc?"
+      ],
+      "ground_truth": "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_precision": 0.7948717948717949,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Thời gian thử việc tiêu chuẩn là bao lâu?",
+      "answer": "việc Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "contexts": [
+        "Trích từ sample_policy.md, đoạn này nói về thử việc.\n\nviệc Thời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm. ## Chính sách mật khẩu Mật khẩu tài khoản công ty phải được thay\n\nCâu hỏi giả định:\nThời gian thử việc là bao nhiêu ngày?\nQuy định về thử việc của nhân viên là gì?\nNhân viên cần biết gì về giai đoạn thử việc?",
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\n# Sổ tay chính sách nội bộ ## Nghỉ phép năm Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ. ## Thử\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?",
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\nđổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung. ## Truy cập VPN Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?"
+      ],
+      "ground_truth": "Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9285714285714286,
+      "context_precision": 0.48148148148148145,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?",
+      "answer": "## Chính sách mật khẩu Mật khẩu tài khoản công ty phải được thay",
+      "contexts": [
+        "Trích từ sample_policy.md, đoạn này nói về thử việc.\n\nviệc Thời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm. ## Chính sách mật khẩu Mật khẩu tài khoản công ty phải được thay\n\nCâu hỏi giả định:\nThời gian thử việc là bao nhiêu ngày?\nQuy định về thử việc của nhân viên là gì?\nNhân viên cần biết gì về giai đoạn thử việc?",
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\nđổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung. ## Truy cập VPN Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?",
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\n# Sổ tay chính sách nội bộ ## Nghỉ phép năm Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ. ## Thử\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?"
+      ],
+      "ground_truth": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6636363636363636,
+      "context_precision": 0.6041666666666666,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?",
+      "answer": "## Truy cập VPN Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "contexts": [
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\nđổi định kỳ mỗi 90 ngày. Mật khẩu cần có độ dài tối thiểu 12 ký tự và không được chia sẻ qua email, tin nhắn hoặc tài liệu dùng chung. ## Truy cập VPN Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ. VPN sử dụng cơ chế\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?",
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\n# Sổ tay chính sách nội bộ ## Nghỉ phép năm Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ. ## Thử\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?",
+        "Trích từ sample_policy.md, đoạn này nói về thử việc.\n\nviệc Thời gian thử việc tiêu chuẩn là 60 ngày. Trong giai đoạn thử việc, nhân viên được đánh giá dựa trên kết quả công việc, mức độ phù hợp với văn hóa tổ chức và khả năng phối hợp với nhóm. ## Chính sách mật khẩu Mật khẩu tài khoản công ty phải được thay\n\nCâu hỏi giả định:\nThời gian thử việc là bao nhiêu ngày?\nQuy định về thử việc của nhân viên là gì?\nNhân viên cần biết gì về giai đoạn thử việc?"
+      ],
+      "ground_truth": "Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9666666666666667,
+      "context_precision": 0.5964912280701754,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
+      "answer": "## Bảo vệ dữ liệu cá nhân Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "contexts": [
+        "Trích từ sample_policy.md, đoạn này nói về bảo vệ dữ liệu cá nhân.\n\nmã hóa mạnh để bảo vệ dữ liệu trong quá trình truyền tải. ## Bảo vệ dữ liệu cá nhân Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu. Nhân viên không được sao chép, chia sẻ hoặc lưu trữ dữ\n\nCâu hỏi giả định:\nĐoạn văn này nói về bảo vệ dữ liệu cá nhân như thế nào?\nThông tin quan trọng trong đoạn văn là gì?\nNgười đọc cần nắm quy định nào từ đoạn này?",
+        "Trích từ sample_policy.md, đoạn này nói về thông tin chung.\n\nliệu cá nhân ngoài hệ thống được phê duyệt.\n\nCâu hỏi giả định:\nĐoạn văn này nói về thông tin chung như thế nào?\nThông tin quan trọng trong đoạn văn là gì?\nNgười đọc cần nắm quy định nào từ đoạn này?",
+        "Trích từ sample_policy.md, đoạn này nói về chính sách nghỉ phép.\n\n# Sổ tay chính sách nội bộ ## Nghỉ phép năm Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm. Số ngày nghỉ phép tăng thêm 1 ngày cho mỗi 5 năm thâm niên công tác. Đơn nghỉ phép cần được quản lý trực tiếp phê duyệt trước khi nghỉ. ## Thử\n\nCâu hỏi giả định:\nNhân viên được nghỉ phép bao nhiêu ngày?\nQuy định về nghỉ phép năm là gì?\nNgày nghỉ phép tăng theo thâm niên như thế nào?"
+      ],
+      "ground_truth": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_precision": 0.49122807017543857,
+      "context_recall": 1.0
+    }
+  ],
+  "failures": [
+    {
+      "question": "Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?",
+      "ground_truth": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày.",
+      "answer": "## Chính sách mật khẩu Mật khẩu tài khoản công ty phải được thay",
+      "worst_metric": "context_precision",
+      "score": 0.6041666666666666,
+      "avg_score": 0.8169507575757575,
+      "diagnosis": "Context còn nhiễu",
+      "suggested_fix": "Dùng reranking mạnh hơn hoặc thêm metadata filter"
+    },
+    {
+      "question": "Thời gian thử việc tiêu chuẩn là bao lâu?",
+      "ground_truth": "Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "answer": "việc Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "worst_metric": "context_precision",
+      "score": 0.48148148148148145,
+      "avg_score": 0.8525132275132276,
+      "diagnosis": "Context còn nhiễu",
+      "suggested_fix": "Dùng reranking mạnh hơn hoặc thêm metadata filter"
+    },
+    {
+      "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
+      "ground_truth": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "answer": "## Bảo vệ dữ liệu cá nhân Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "worst_metric": "context_precision",
+      "score": 0.49122807017543857,
+      "avg_score": 0.8728070175438596,
+      "diagnosis": "Context còn nhiễu",
+      "suggested_fix": "Dùng reranking mạnh hơn hoặc thêm metadata filter"
+    },
+    {
+      "question": "Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?",
+      "ground_truth": "Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "answer": "## Truy cập VPN Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "worst_metric": "context_precision",
+      "score": 0.5964912280701754,
+      "avg_score": 0.8907894736842106,
+      "diagnosis": "Context còn nhiễu",
+      "suggested_fix": "Dùng reranking mạnh hơn hoặc thêm metadata filter"
+    },
+    {
+      "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
+      "ground_truth": "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "answer": "# Sổ tay chính sách nội bộ ## Nghỉ phép năm Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "worst_metric": "context_precision",
+      "score": 0.7948717948717949,
+      "avg_score": 0.9487179487179487,
+      "diagnosis": "Không có lỗi nghiêm trọng",
+      "suggested_fix": "Theo dõi thêm trên test set lớn hơn"
+    }
+  ]
+}
