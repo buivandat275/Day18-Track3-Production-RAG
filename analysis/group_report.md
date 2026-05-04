@@ -5,21 +5,21 @@
 
 ## Thành viên & Phân công
 
-| Tên | Module | Hoàn thành | Tests pass |
-|-----|--------|-----------|-----------|
-|Nguyễn Minh Quân | M1: Chunking | ✅ | 13/13 |
-| | M2: Hybrid Search | ☐ | /5 |
-|Bùi Văn Đạt | M3: Reranking | ✅ | 5/5 |
-| | M4: Evaluation | ☐ | /4 |
+| Tên              | Module            | Hoàn thành | Tests pass |
+| ---------------- | ----------------- | ---------- | ---------- |
+| Nguyễn Minh Quân | M1: Chunking      | ✅          | 13/13      |
+| Trịnh Đức Anh    | M2: Hybrid Search | ✅          | 5/5        |
+| Bùi Văn Đạt      | M3: Reranking     | ✅          | 5/5        |
+|                  | M4: Evaluation    | ☐          | /4         |
 
 ## Kết quả RAGAS
 
-| Metric | Naive | Production | Δ |
-|--------|-------|-----------|---|
-| Faithfulness | | | |
-| Answer Relevancy | | | |
-| Context Precision | | | |
-| Context Recall | | | |
+| Metric            | Naive | Production | Δ   |
+| ----------------- | ----- | ---------- | --- |
+| Faithfulness      |       |            |     |
+| Answer Relevancy  |       |            |     |
+| Context Precision |       |            |     |
+| Context Recall    |       |            |     |
 
 ## Key Findings
 
