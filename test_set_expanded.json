@@ -1,0 +1,202 @@
+[
+  {
+    "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
+    "ground_truth": "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm."
+  },
+  {
+    "question": "Thời gian thử việc tiêu chuẩn là bao lâu?",
+    "ground_truth": "Thời gian thử việc tiêu chuẩn là 60 ngày."
+  },
+  {
+    "question": "Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?",
+    "ground_truth": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày."
+  },
+  {
+    "question": "Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?",
+    "ground_truth": "Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ."
+  },
+  {
+    "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
+    "ground_truth": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu."
+  },
+  {
+    "question": "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+    "ground_truth": "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào."
+  },
+  {
+    "question": "Nhân viên được hưởng tối đa bao nhiêu ngày nghỉ ốm nguyên lương?",
+    "ground_truth": "Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện."
+  },
+  {
+    "question": "Quy trình nộp đơn xin phép là gì?",
+    "ground_truth": "Nhân viên phải nộp đơn xin phép tối thiểu 5 ngày làm việc trước qua hệ thống HR portal, được quản lý trực tiếp phê duyệt."
+  },
+  {
+    "question": "Khi kết thúc hợp đồng, nhân viên cần hoàn trả những gì?",
+    "ground_truth": "Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng."
+  },
+  {
+    "question": "Nhân viên có được phép sử dụng thiết bị cá nhân cho công việc không?",
+    "ground_truth": "Nhân viên không được phép sử dụng thiết bị cá nhân (BYOD) nếu không được IT department phê duyệt trước, phải tuân thủ security policy."
+  },
+  {
+    "question": "Quy định về quế tục tiêu chuẩn trong công ty là gì?",
+    "ground_truth": "Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách."
+  },
+  {
+    "question": "Mức lương tối thiểu của công ty là bao nhiêu?",
+    "ground_truth": "Mức lương tối thiểu phụ thuộc vào chương trình và trình độ, người phụ trách HR sẽ công bố chi tiết trong buổi phỏng vấn."
+  },
+  {
+    "question": "Có được hỗ trợ chi phí đào tạo không?",
+    "ground_truth": "Công ty hỗ trợ chi phí đào tạo ngoài cho nhân viên nếu có liên quan trực tiếp đến công việc, phải được quản lý trực tiếp và HR phê duyệt."
+  },
+  {
+    "question": "Chế độ bảo hiểm xã hội và bảo hiểm y tế như thế nào?",
+    "ground_truth": "Công ty tham gia bảo hiểm xã hội bắt buộc theo luật định, bảo hiểm y tế cao cấp được công ty thanh toán phí cho nhân viên chính thức."
+  },
+  {
+    "question": "Quy trình review tăng lương hàng năm là gì?",
+    "ground_truth": "Review tăng lương diễn ra hàng năm vào quý 1, dựa trên đánh giá hiệu suất của nhân viên, phê duyệt bởi quản lý và HR."
+  },
+  {
+    "question": "Nhân viên được phép làm việc ngoài giờ bao nhiêu?",
+    "ground_truth": "Nhân viên không nên làm việc ngoài giờ thường xuyên, nếu cần thiết phải được quản lý trực tiếp cho phép và được thanh toán theo quy định."
+  },
+  {
+    "question": "Chính sách làm việc từ xa là gì?",
+    "ground_truth": "Nhân viên được phép làm việc từ xa tối đa 2 ngày/tuần (thứ 3 và thứ 4) với sự cho phép của quản lý trực tiếp."
+  },
+  {
+    "question": "Xử lý như thế nào khi vi phạm quy tắc bảo mật?",
+    "ground_truth": "Vi phạm bảo mật sẽ được xử lý nghiêm, từ cảnh cáo đến chấm dứt hợp đồng tùy mức độ, phụ thuộc vào quyết định của Ban quản lý."
+  },
+  {
+    "question": "Quy định về sử dụng mạng xã hội trong giờ làm việc là gì?",
+    "ground_truth": "Nhân viên không được sử dụng mạng xã hội trong giờ làm việc trừ khi liên quan đến công việc marketing hoặc được phê duyệt bởi quản lý."
+  },
+  {
+    "question": "Có chính sách hỗ trợ sức khỏe tâm thần không?",
+    "ground_truth": "Công ty cung cấp hỗ trợ sức khỏe tâm thần thông qua EAP (Employee Assistance Program), nhân viên có thể liên hệ HR để được hỗ trợ bảo mật."
+  },
+  {
+    "question": "Quy trình khiếu nại hoặc phàn nàn như thế nào?",
+    "ground_truth": "Nhân viên có thể nộp khiếu nại cho HR hoặc quản lý trực tiếp, sẽ được xem xét trong vòng 10 ngày làm việc."
+  },
+  {
+    "question": "Nhân viên có được phép bắn pháo hoa trong công ty không?",
+    "ground_truth": "Nhân viên không được phép bắn pháo hoa hoặc sử dụng bất kỳ chất nổ trong khuôn viên công ty vì lý do an toàn."
+  },
+  {
+    "question": "Chính sách về động vật ở công ty là gì?",
+    "ground_truth": "Không được mang động vật vào công ty trừ động vật hỗ trợ (service animals) được phê duyệt trước."
+  },
+  {
+    "question": "Quy định về uống rượu bia trong văn phòng như thế nào?",
+    "ground_truth": "Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức."
+  },
+  {
+    "question": "Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?",
+    "ground_truth": "Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn."
+  },
+  {
+    "question": "Quy định về đông đảo câu lạc bộ nhân viên là gì?",
+    "ground_truth": "Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định."
+  },
+  {
+    "question": "Chế độ thai sản như thế nào?",
+    "ground_truth": "Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty."
+  },
+  {
+    "question": "Quy định về hút thuốc trong công ty là gì?",
+    "ground_truth": "Hút thuốc không được phép trong toàn bộ khuôn viên công ty, khu vực hút thuốc được quy định riêng ở bên ngoài tòa nhà."
+  },
+  {
+    "question": "Nhân viên được phép tạo hoặc quản lý tài khoản mạng xã hội công ty như thế nào?",
+    "ground_truth": "Tài khoản mạng xã hội công ty phải được quản lý bởi bộ phận Marketing, nhân viên khác cần được phê duyệt trước khi có quyền truy cập."
+  },
+  {
+    "question": "Quy trình onboarding cho nhân viên mới là gì?",
+    "ground_truth": "Nhân viên mới sẽ tham gia khóa onboarding 1 ngày được dẫn dắt bởi HR, bao gồm tìm hiểu công ty, chính sách, hệ thống và giới thiệu đội."
+  },
+  {
+    "question": "Chính sách du lịch công ty như thế nào?",
+    "ground_truth": "Công ty tổ chức du lịch hàng năm cho nhân viên, chi phí được công ty thanh toán, xác định bởi bộ phận HR vào tháng 10 hàng năm."
+  },
+  {
+    "question": "Quy định về ghi chú công ty là gì?",
+    "ground_truth": "Tất cả ghi chú công ty phải được lưu trữ trong hệ thống quản lý tài liệu, không được để ngoài bàn sau khi rời công ty."
+  },
+  {
+    "question": "Nhân viên được phép làm việc kiêm không?",
+    "ground_truth": "Nhân viên không được làm việc kiêm cho công ty khác hoặc làm freelance nếu xung đột với công việc hiện tại mà không được phê duyệt."
+  },
+  {
+    "question": "Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?",
+    "ground_truth": "Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR."
+  },
+  {
+    "question": "Quy định về tranh chấp lợi ích như thế nào?",
+    "ground_truth": "Nhân viên phải khai báo tranh chấp lợi ích liên quan đến công việc cho quản lý trực tiếp hoặc HR ngay khi phát hiện."
+  },
+  {
+    "question": "Nhân viên nếu không đồng ý với quyết định của quản lý có thể làm gì?",
+    "ground_truth": "Nhân viên có thể yêu cầu cuộc họp với quản lý để thảo luận, sau đó có quyền khiếu nại với HR nếu vẫn không hài lòng."
+  },
+  {
+    "question": "Chế độ thưởng cuối năm như thế nào?",
+    "ground_truth": "Thưởng cuối năm dựa trên hiệu suất hàng năm, thường là 0-2 tháng lương, phê duyệt bởi Ban quản lý vào tháng 11."
+  },
+  {
+    "question": "Quy định về bảo hiểm tai nạn lao động là gì?",
+    "ground_truth": "Công ty tham gia bảo hiểm tai nạn lao động bắt buộc, khi xảy ra tai nạn phải báo cáo cho HR trong 24 giờ."
+  },
+  {
+    "question": "Nhân viên được phép có thú cưng ở trong công ty không?",
+    "ground_truth": "Động vật cảnh đặc biệt hoặc thú cưng không được phép ở trong công ty trừ những con cử chỉ hỗ trợ sức khỏe được công ty cho phép."
+  },
+  {
+    "question": "Quy trình tuyển dụng kỳ tiếp theo là khi nào?",
+    "ground_truth": "Quy trình tuyển dụng thường diễn ra hàng tháng, chi tiết được công bố trên trang web công ty và các nền tảng tuyển dụng."
+  },
+  {
+    "question": "Nhân viên có quyền từ chối công việc được giao không?",
+    "ground_truth": "Nhân viên không nên từ chối công việc được giao trừ khi có lý do chính đáng, phải thảo luận với quản lý trực tiếp trước."
+  },
+  {
+    "question": "Chính sách về bình luận công khai của nhân viên như thế nào?",
+    "ground_truth": "Nhân viên không được bình luận công khai hoặc phê bình công ty trên mạng xã hội, điều này có thể dẫn đến kỷ luật hoặc sa thải."
+  },
+  {
+    "question": "Quy định về thẻ nhân viên là gì?",
+    "ground_truth": "Thẻ nhân viên phải được mang theo trong giờ làm việc, không được cho người khác mượn, mất thẻ phải báo cho bộ phận bảo vệ ngay."
+  },
+  {
+    "question": "Nhân viên được cung cấp những trang thiết bị gì?",
+    "ground_truth": "Công ty cung cấp laptop, điện thoại, bàn làm việc, ghế, monitor, keyboard, chuột và các thiết bị cần thiết khác cho công việc."
+  },
+  {
+    "question": "Quy định về tổ chức sinh nhật hoặc sự kiện nhân viên là gì?",
+    "ground_truth": "Bộ phận HR có thể tổ chức sinh nhật hàng tháng cho nhân viên có sinh nhật, sử dụng không gian công ty và ngân sách từ công ty."
+  },
+  {
+    "question": "Chế độ hưu trí sớm có được công ty hỗ trợ không?",
+    "ground_truth": "Công ty không hỗ trợ hưu trí sớm, nhân viên muốn hưu trí cần tuân thủ quy định của pháp luật về tuổi hưu trí."
+  },
+  {
+    "question": "Quy định về sử dụng công cụ của công ty cho mục đích cá nhân là gì?",
+    "ground_truth": "Không được phép sử dụng công cụ, thiết bị công ty cho mục đích cá nhân, phải trả lại đầy đủ khi kết thúc công việc."
+  },
+  {
+    "question": "Nhân viên nếu bị thương trong công ty cần làm gì?",
+    "ground_truth": "Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm."
+  },
+  {
+    "question": "Quy định về lịch làm việc hàng tuần là gì?",
+    "ground_truth": "Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00."
+  },
+  {
+    "question": "Chính sách về thăng chức hoặc thay đổi vị trí như thế nào?",
+    "ground_truth": "Thăng chức hoặc thay đổi vị trí được xem xét hàng năm dựa trên hiệu suất, kinh nghiệm và nhu cầu của công ty."
+  }
+]

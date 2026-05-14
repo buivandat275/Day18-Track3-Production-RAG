@@ -1,0 +1,1254 @@
+{
+  "phase": "B: LLM-Judge",
+  "timestamp": "2026-05-15 01:02:44",
+  "pairwise_comparisons": [
+    {
+      "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
+      "answer_a": "Theo chính sách công ty: Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "answer_b": "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Thời gian thử việc tiêu chuẩn là bao lâu?",
+      "answer_a": "Theo chính sách công ty: Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "answer_b": "Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?",
+      "answer_a": "Theo chính sách công ty: Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày.",
+      "answer_b": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?",
+      "answer_a": "Theo chính sách công ty: Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "answer_b": "Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
+      "answer_a": "Theo chính sách công ty: Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "answer_b": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "winner": "A",
+      "confidence": 0.7211363636363638,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+      "answer_a": "Theo chính sách công ty: Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+      "answer_b": "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên được hưởng tối đa bao nhiêu ngày nghỉ ốm nguyên lương?",
+      "answer_a": "Theo chính sách công ty: Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện.",
+      "answer_b": "Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy trình nộp đơn xin phép là gì?",
+      "answer_a": "Theo chính sách công ty: Nhân viên phải nộp đơn xin phép tối thiểu 5 ngày làm việc trước qua hệ thống HR portal, được quản lý trực tiếp phê duyệt.",
+      "answer_b": "Nhân viên phải nộp đơn xin phép tối thiểu 5 ngày làm việc trước qua hệ thống HR portal, được quản lý trực tiếp phê duyệt.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Khi kết thúc hợp đồng, nhân viên cần hoàn trả những gì?",
+      "answer_a": "Theo chính sách công ty: Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+      "answer_b": "Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên có được phép sử dụng thiết bị cá nhân cho công việc không?",
+      "answer_a": "Theo chính sách công ty: Nhân viên không được phép sử dụng thiết bị cá nhân (BYOD) nếu không được IT department phê duyệt trước, phải tuân thủ security policy.",
+      "answer_b": "Nhân viên không được phép sử dụng thiết bị cá nhân (BYOD) nếu không được IT department phê duyệt trước, phải tuân thủ security policy.",
+      "winner": "A",
+      "confidence": 0.7532792207792208,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về quế tục tiêu chuẩn trong công ty là gì?",
+      "answer_a": "Theo chính sách công ty: Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+      "answer_b": "Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+      "winner": "A",
+      "confidence": 0.7586363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Mức lương tối thiểu của công ty là bao nhiêu?",
+      "answer_a": "Theo chính sách công ty: Mức lương tối thiểu phụ thuộc vào chương trình và trình độ, người phụ trách HR sẽ công bố chi tiết trong buổi phỏng vấn.",
+      "answer_b": "Mức lương tối thiểu phụ thuộc vào chương trình và trình độ, người phụ trách HR sẽ công bố chi tiết trong buổi phỏng vấn.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Có được hỗ trợ chi phí đào tạo không?",
+      "answer_a": "Theo chính sách công ty: Công ty hỗ trợ chi phí đào tạo ngoài cho nhân viên nếu có liên quan trực tiếp đến công việc, phải được quản lý trực tiếp và HR phê duyệt.",
+      "answer_b": "Công ty hỗ trợ chi phí đào tạo ngoài cho nhân viên nếu có liên quan trực tiếp đến công việc, phải được quản lý trực tiếp và HR phê duyệt.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chế độ bảo hiểm xã hội và bảo hiểm y tế như thế nào?",
+      "answer_a": "Theo chính sách công ty: Công ty tham gia bảo hiểm xã hội bắt buộc theo luật định, bảo hiểm y tế cao cấp được công ty thanh toán phí cho nhân viên chính thức.",
+      "answer_b": "Công ty tham gia bảo hiểm xã hội bắt buộc theo luật định, bảo hiểm y tế cao cấp được công ty thanh toán phí cho nhân viên chính thức.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy trình review tăng lương hàng năm là gì?",
+      "answer_a": "Theo chính sách công ty: Review tăng lương diễn ra hàng năm vào quý 1, dựa trên đánh giá hiệu suất của nhân viên, phê duyệt bởi quản lý và HR.",
+      "answer_b": "Review tăng lương diễn ra hàng năm vào quý 1, dựa trên đánh giá hiệu suất của nhân viên, phê duyệt bởi quản lý và HR.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên được phép làm việc ngoài giờ bao nhiêu?",
+      "answer_a": "Theo chính sách công ty: Nhân viên không nên làm việc ngoài giờ thường xuyên, nếu cần thiết phải được quản lý trực tiếp cho phép và được thanh toán theo quy định.",
+      "answer_b": "Nhân viên không nên làm việc ngoài giờ thường xuyên, nếu cần thiết phải được quản lý trực tiếp cho phép và được thanh toán theo quy định.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chính sách làm việc từ xa là gì?",
+      "answer_a": "Theo chính sách công ty: Nhân viên được phép làm việc từ xa tối đa 2 ngày/tuần (thứ 3 và thứ 4) với sự cho phép của quản lý trực tiếp.",
+      "answer_b": "Nhân viên được phép làm việc từ xa tối đa 2 ngày/tuần (thứ 3 và thứ 4) với sự cho phép của quản lý trực tiếp.",
+      "winner": "A",
+      "confidence": 0.8336363636363636,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Xử lý như thế nào khi vi phạm quy tắc bảo mật?",
+      "answer_a": "Theo chính sách công ty: Vi phạm bảo mật sẽ được xử lý nghiêm, từ cảnh cáo đến chấm dứt hợp đồng tùy mức độ, phụ thuộc vào quyết định của Ban quản lý.",
+      "answer_b": "Vi phạm bảo mật sẽ được xử lý nghiêm, từ cảnh cáo đến chấm dứt hợp đồng tùy mức độ, phụ thuộc vào quyết định của Ban quản lý.",
+      "winner": "A",
+      "confidence": 0.7211363636363636,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về sử dụng mạng xã hội trong giờ làm việc là gì?",
+      "answer_a": "Theo chính sách công ty: Nhân viên không được sử dụng mạng xã hội trong giờ làm việc trừ khi liên quan đến công việc marketing hoặc được phê duyệt bởi quản lý.",
+      "answer_b": "Nhân viên không được sử dụng mạng xã hội trong giờ làm việc trừ khi liên quan đến công việc marketing hoặc được phê duyệt bởi quản lý.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Có chính sách hỗ trợ sức khỏe tâm thần không?",
+      "answer_a": "Theo chính sách công ty: Công ty cung cấp hỗ trợ sức khỏe tâm thần thông qua EAP (Employee Assistance Program), nhân viên có thể liên hệ HR để được hỗ trợ bảo mật.",
+      "answer_b": "Công ty cung cấp hỗ trợ sức khỏe tâm thần thông qua EAP (Employee Assistance Program), nhân viên có thể liên hệ HR để được hỗ trợ bảo mật.",
+      "winner": "A",
+      "confidence": 0.8111363636363638,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy trình khiếu nại hoặc phàn nàn như thế nào?",
+      "answer_a": "Theo chính sách công ty: Nhân viên có thể nộp khiếu nại cho HR hoặc quản lý trực tiếp, sẽ được xem xét trong vòng 10 ngày làm việc.",
+      "answer_b": "Nhân viên có thể nộp khiếu nại cho HR hoặc quản lý trực tiếp, sẽ được xem xét trong vòng 10 ngày làm việc.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên có được phép bắn pháo hoa trong công ty không?",
+      "answer_a": "Theo chính sách công ty: Nhân viên không được phép bắn pháo hoa hoặc sử dụng bất kỳ chất nổ trong khuôn viên công ty vì lý do an toàn.",
+      "answer_b": "Nhân viên không được phép bắn pháo hoa hoặc sử dụng bất kỳ chất nổ trong khuôn viên công ty vì lý do an toàn.",
+      "winner": "A",
+      "confidence": 0.7211363636363638,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chính sách về động vật ở công ty là gì?",
+      "answer_a": "Theo chính sách công ty: Không được mang động vật vào công ty trừ động vật hỗ trợ (service animals) được phê duyệt trước.",
+      "answer_b": "Không được mang động vật vào công ty trừ động vật hỗ trợ (service animals) được phê duyệt trước.",
+      "winner": "A",
+      "confidence": 0.8111363636363638,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về uống rượu bia trong văn phòng như thế nào?",
+      "answer_a": "Theo chính sách công ty: Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+      "answer_b": "Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?",
+      "answer_a": "Theo chính sách công ty: Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+      "answer_b": "Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+      "winner": "A",
+      "confidence": 0.7532792207792208,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về đông đảo câu lạc bộ nhân viên là gì?",
+      "answer_a": "Theo chính sách công ty: Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+      "answer_b": "Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chế độ thai sản như thế nào?",
+      "answer_a": "Theo chính sách công ty: Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+      "answer_b": "Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về hút thuốc trong công ty là gì?",
+      "answer_a": "Theo chính sách công ty: Hút thuốc không được phép trong toàn bộ khuôn viên công ty, khu vực hút thuốc được quy định riêng ở bên ngoài tòa nhà.",
+      "answer_b": "Hút thuốc không được phép trong toàn bộ khuôn viên công ty, khu vực hút thuốc được quy định riêng ở bên ngoài tòa nhà.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên được phép tạo hoặc quản lý tài khoản mạng xã hội công ty như thế nào?",
+      "answer_a": "Theo chính sách công ty: Tài khoản mạng xã hội công ty phải được quản lý bởi bộ phận Marketing, nhân viên khác cần được phê duyệt trước khi có quyền truy cập.",
+      "answer_b": "Tài khoản mạng xã hội công ty phải được quản lý bởi bộ phận Marketing, nhân viên khác cần được phê duyệt trước khi có quyền truy cập.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy trình onboarding cho nhân viên mới là gì?",
+      "answer_a": "Theo chính sách công ty: Nhân viên mới sẽ tham gia khóa onboarding 1 ngày được dẫn dắt bởi HR, bao gồm tìm hiểu công ty, chính sách, hệ thống và giới thiệu đội.",
+      "answer_b": "Nhân viên mới sẽ tham gia khóa onboarding 1 ngày được dẫn dắt bởi HR, bao gồm tìm hiểu công ty, chính sách, hệ thống và giới thiệu đội.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chính sách du lịch công ty như thế nào?",
+      "answer_a": "Theo chính sách công ty: Công ty tổ chức du lịch hàng năm cho nhân viên, chi phí được công ty thanh toán, xác định bởi bộ phận HR vào tháng 10 hàng năm.",
+      "answer_b": "Công ty tổ chức du lịch hàng năm cho nhân viên, chi phí được công ty thanh toán, xác định bởi bộ phận HR vào tháng 10 hàng năm.",
+      "winner": "A",
+      "confidence": 0.8211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về ghi chú công ty là gì?",
+      "answer_a": "Theo chính sách công ty: Tất cả ghi chú công ty phải được lưu trữ trong hệ thống quản lý tài liệu, không được để ngoài bàn sau khi rời công ty.",
+      "answer_b": "Tất cả ghi chú công ty phải được lưu trữ trong hệ thống quản lý tài liệu, không được để ngoài bàn sau khi rời công ty.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên được phép làm việc kiêm không?",
+      "answer_a": "Theo chính sách công ty: Nhân viên không được làm việc kiêm cho công ty khác hoặc làm freelance nếu xung đột với công việc hiện tại mà không được phê duyệt.",
+      "answer_b": "Nhân viên không được làm việc kiêm cho công ty khác hoặc làm freelance nếu xung đột với công việc hiện tại mà không được phê duyệt.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?",
+      "answer_a": "Theo chính sách công ty: Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+      "answer_b": "Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+      "winner": "A",
+      "confidence": 0.7903671328671329,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về tranh chấp lợi ích như thế nào?",
+      "answer_a": "Theo chính sách công ty: Nhân viên phải khai báo tranh chấp lợi ích liên quan đến công việc cho quản lý trực tiếp hoặc HR ngay khi phát hiện.",
+      "answer_b": "Nhân viên phải khai báo tranh chấp lợi ích liên quan đến công việc cho quản lý trực tiếp hoặc HR ngay khi phát hiện.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên nếu không đồng ý với quyết định của quản lý có thể làm gì?",
+      "answer_a": "Theo chính sách công ty: Nhân viên có thể yêu cầu cuộc họp với quản lý để thảo luận, sau đó có quyền khiếu nại với HR nếu vẫn không hài lòng.",
+      "answer_b": "Nhân viên có thể yêu cầu cuộc họp với quản lý để thảo luận, sau đó có quyền khiếu nại với HR nếu vẫn không hài lòng.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chế độ thưởng cuối năm như thế nào?",
+      "answer_a": "Theo chính sách công ty: Thưởng cuối năm dựa trên hiệu suất hàng năm, thường là 0-2 tháng lương, phê duyệt bởi Ban quản lý vào tháng 11.",
+      "answer_b": "Thưởng cuối năm dựa trên hiệu suất hàng năm, thường là 0-2 tháng lương, phê duyệt bởi Ban quản lý vào tháng 11.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về bảo hiểm tai nạn lao động là gì?",
+      "answer_a": "Theo chính sách công ty: Công ty tham gia bảo hiểm tai nạn lao động bắt buộc, khi xảy ra tai nạn phải báo cáo cho HR trong 24 giờ.",
+      "answer_b": "Công ty tham gia bảo hiểm tai nạn lao động bắt buộc, khi xảy ra tai nạn phải báo cáo cho HR trong 24 giờ.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên được phép có thú cưng ở trong công ty không?",
+      "answer_a": "Theo chính sách công ty: Động vật cảnh đặc biệt hoặc thú cưng không được phép ở trong công ty trừ những con cử chỉ hỗ trợ sức khỏe được công ty cho phép.",
+      "answer_b": "Động vật cảnh đặc biệt hoặc thú cưng không được phép ở trong công ty trừ những con cử chỉ hỗ trợ sức khỏe được công ty cho phép.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy trình tuyển dụng kỳ tiếp theo là khi nào?",
+      "answer_a": "Theo chính sách công ty: Quy trình tuyển dụng thường diễn ra hàng tháng, chi tiết được công bố trên trang web công ty và các nền tảng tuyển dụng.",
+      "answer_b": "Quy trình tuyển dụng thường diễn ra hàng tháng, chi tiết được công bố trên trang web công ty và các nền tảng tuyển dụng.",
+      "winner": "A",
+      "confidence": 0.7661363636363636,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên có quyền từ chối công việc được giao không?",
+      "answer_a": "Theo chính sách công ty: Nhân viên không nên từ chối công việc được giao trừ khi có lý do chính đáng, phải thảo luận với quản lý trực tiếp trước.",
+      "answer_b": "Nhân viên không nên từ chối công việc được giao trừ khi có lý do chính đáng, phải thảo luận với quản lý trực tiếp trước.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chính sách về bình luận công khai của nhân viên như thế nào?",
+      "answer_a": "Theo chính sách công ty: Nhân viên không được bình luận công khai hoặc phê bình công ty trên mạng xã hội, điều này có thể dẫn đến kỷ luật hoặc sa thải.",
+      "answer_b": "Nhân viên không được bình luận công khai hoặc phê bình công ty trên mạng xã hội, điều này có thể dẫn đến kỷ luật hoặc sa thải.",
+      "winner": "A",
+      "confidence": 0.790367132867133,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về thẻ nhân viên là gì?",
+      "answer_a": "Theo chính sách công ty: Thẻ nhân viên phải được mang theo trong giờ làm việc, không được cho người khác mượn, mất thẻ phải báo cho bộ phận bảo vệ ngay.",
+      "answer_b": "Thẻ nhân viên phải được mang theo trong giờ làm việc, không được cho người khác mượn, mất thẻ phải báo cho bộ phận bảo vệ ngay.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên được cung cấp những trang thiết bị gì?",
+      "answer_a": "Theo chính sách công ty: Công ty cung cấp laptop, điện thoại, bàn làm việc, ghế, monitor, keyboard, chuột và các thiết bị cần thiết khác cho công việc.",
+      "answer_b": "Công ty cung cấp laptop, điện thoại, bàn làm việc, ghế, monitor, keyboard, chuột và các thiết bị cần thiết khác cho công việc.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về tổ chức sinh nhật hoặc sự kiện nhân viên là gì?",
+      "answer_a": "Theo chính sách công ty: Bộ phận HR có thể tổ chức sinh nhật hàng tháng cho nhân viên có sinh nhật, sử dụng không gian công ty và ngân sách từ công ty.",
+      "answer_b": "Bộ phận HR có thể tổ chức sinh nhật hàng tháng cho nhân viên có sinh nhật, sử dụng không gian công ty và ngân sách từ công ty.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chế độ hưu trí sớm có được công ty hỗ trợ không?",
+      "answer_a": "Theo chính sách công ty: Công ty không hỗ trợ hưu trí sớm, nhân viên muốn hưu trí cần tuân thủ quy định của pháp luật về tuổi hưu trí.",
+      "answer_b": "Công ty không hỗ trợ hưu trí sớm, nhân viên muốn hưu trí cần tuân thủ quy định của pháp luật về tuổi hưu trí.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về sử dụng công cụ của công ty cho mục đích cá nhân là gì?",
+      "answer_a": "Theo chính sách công ty: Không được phép sử dụng công cụ, thiết bị công ty cho mục đích cá nhân, phải trả lại đầy đủ khi kết thúc công việc.",
+      "answer_b": "Không được phép sử dụng công cụ, thiết bị công ty cho mục đích cá nhân, phải trả lại đầy đủ khi kết thúc công việc.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Nhân viên nếu bị thương trong công ty cần làm gì?",
+      "answer_a": "Theo chính sách công ty: Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+      "answer_b": "Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Quy định về lịch làm việc hàng tuần là gì?",
+      "answer_a": "Theo chính sách công ty: Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+      "answer_b": "Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+      "winner": "A",
+      "confidence": 0.7211363636363637,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    },
+    {
+      "question": "Chính sách về thăng chức hoặc thay đổi vị trí như thế nào?",
+      "answer_a": "Theo chính sách công ty: Thăng chức hoặc thay đổi vị trí được xem xét hàng năm dựa trên hiệu suất, kinh nghiệm và nhu cầu của công ty.",
+      "answer_b": "Thăng chức hoặc thay đổi vị trí được xem xét hàng năm dựa trên hiệu suất, kinh nghiệm và nhu cầu của công ty.",
+      "winner": "A",
+      "confidence": 0.790367132867133,
+      "reason": "Answer A is more complete, grounded, and relevant."
+    }
+  ],
+  "swap_and_average": [
+    {
+      "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Thời gian thử việc tiêu chuẩn là bao lâu?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363638
+    },
+    {
+      "question": "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên được hưởng tối đa bao nhiêu ngày nghỉ ốm nguyên lương?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy trình nộp đơn xin phép là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Khi kết thúc hợp đồng, nhân viên cần hoàn trả những gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên có được phép sử dụng thiết bị cá nhân cho công việc không?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7532792207792208
+    },
+    {
+      "question": "Quy định về quế tục tiêu chuẩn trong công ty là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7586363636363637
+    },
+    {
+      "question": "Mức lương tối thiểu của công ty là bao nhiêu?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Có được hỗ trợ chi phí đào tạo không?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chế độ bảo hiểm xã hội và bảo hiểm y tế như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy trình review tăng lương hàng năm là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên được phép làm việc ngoài giờ bao nhiêu?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chính sách làm việc từ xa là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.8336363636363636
+    },
+    {
+      "question": "Xử lý như thế nào khi vi phạm quy tắc bảo mật?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363636
+    },
+    {
+      "question": "Quy định về sử dụng mạng xã hội trong giờ làm việc là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Có chính sách hỗ trợ sức khỏe tâm thần không?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.8111363636363638
+    },
+    {
+      "question": "Quy trình khiếu nại hoặc phàn nàn như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên có được phép bắn pháo hoa trong công ty không?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363638
+    },
+    {
+      "question": "Chính sách về động vật ở công ty là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.8111363636363638
+    },
+    {
+      "question": "Quy định về uống rượu bia trong văn phòng như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7532792207792208
+    },
+    {
+      "question": "Quy định về đông đảo câu lạc bộ nhân viên là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chế độ thai sản như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy định về hút thuốc trong công ty là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên được phép tạo hoặc quản lý tài khoản mạng xã hội công ty như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy trình onboarding cho nhân viên mới là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chính sách du lịch công ty như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.8211363636363637
+    },
+    {
+      "question": "Quy định về ghi chú công ty là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên được phép làm việc kiêm không?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7903671328671329
+    },
+    {
+      "question": "Quy định về tranh chấp lợi ích như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên nếu không đồng ý với quyết định của quản lý có thể làm gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chế độ thưởng cuối năm như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy định về bảo hiểm tai nạn lao động là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên được phép có thú cưng ở trong công ty không?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy trình tuyển dụng kỳ tiếp theo là khi nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7661363636363636
+    },
+    {
+      "question": "Nhân viên có quyền từ chối công việc được giao không?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chính sách về bình luận công khai của nhân viên như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.790367132867133
+    },
+    {
+      "question": "Quy định về thẻ nhân viên là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên được cung cấp những trang thiết bị gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy định về tổ chức sinh nhật hoặc sự kiện nhân viên là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chế độ hưu trí sớm có được công ty hỗ trợ không?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy định về sử dụng công cụ của công ty cho mục đích cá nhân là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Nhân viên nếu bị thương trong công ty cần làm gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Quy định về lịch làm việc hàng tuần là gì?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.7211363636363637
+    },
+    {
+      "question": "Chính sách về thăng chức hoặc thay đổi vị trí như thế nào?",
+      "original_judgment": "A",
+      "swapped_judgment": "B",
+      "normalized_swapped_judgment": "A",
+      "position_bias_detected": false,
+      "final_winner": "A",
+      "final_confidence": 0.790367132867133
+    }
+  ],
+  "absolute_judge": [
+    {
+      "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
+      "answer": "Theo chính sách công ty: Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "score": 3.56,
+      "rating": "good",
+      "reason": "relevance=0.73, completeness=0.41, grounded=1.00"
+    },
+    {
+      "question": "Thời gian thử việc tiêu chuẩn là bao lâu?",
+      "answer": "Theo chính sách công ty: Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "score": 3.43,
+      "rating": "acceptable",
+      "reason": "relevance=0.75, completeness=0.30, grounded=1.00"
+    },
+    {
+      "question": "Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?",
+      "answer": "Theo chính sách công ty: Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày.",
+      "score": 3.46,
+      "rating": "acceptable",
+      "reason": "relevance=0.67, completeness=0.41, grounded=1.00"
+    },
+    {
+      "question": "Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?",
+      "answer": "Theo chính sách công ty: Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "score": 3.77,
+      "rating": "good",
+      "reason": "relevance=0.77, completeness=0.49, grounded=1.00"
+    },
+    {
+      "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
+      "answer": "Theo chính sách công ty: Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "score": 3.93,
+      "rating": "good",
+      "reason": "relevance=0.73, completeness=0.64, grounded=1.00"
+    },
+    {
+      "question": "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+      "answer": "Theo chính sách công ty: Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+      "score": 2.97,
+      "rating": "acceptable",
+      "reason": "relevance=0.14, completeness=0.70, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên được hưởng tối đa bao nhiêu ngày nghỉ ốm nguyên lương?",
+      "answer": "Theo chính sách công ty: Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện.",
+      "score": 4.0,
+      "rating": "good",
+      "reason": "relevance=0.73, completeness=0.68, grounded=1.00"
+    },
+    {
+      "question": "Quy trình nộp đơn xin phép là gì?",
+      "answer": "Theo chính sách công ty: Nhân viên phải nộp đơn xin phép tối thiểu 5 ngày làm việc trước qua hệ thống HR portal, được quản lý trực tiếp phê duyệt.",
+      "score": 3.69,
+      "rating": "good",
+      "reason": "relevance=0.57, completeness=0.66, grounded=1.00"
+    },
+    {
+      "question": "Khi kết thúc hợp đồng, nhân viên cần hoàn trả những gì?",
+      "answer": "Theo chính sách công ty: Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+      "score": 3.43,
+      "rating": "acceptable",
+      "reason": "relevance=0.33, completeness=0.77, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên có được phép sử dụng thiết bị cá nhân cho công việc không?",
+      "answer": "Theo chính sách công ty: Nhân viên không được phép sử dụng thiết bị cá nhân (BYOD) nếu không được IT department phê duyệt trước, phải tuân thủ security policy.",
+      "score": 4.02,
+      "rating": "good",
+      "reason": "relevance=0.70, completeness=0.72, grounded=1.00"
+    },
+    {
+      "question": "Quy định về quế tục tiêu chuẩn trong công ty là gì?",
+      "answer": "Theo chính sách công ty: Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+      "score": 3.03,
+      "rating": "acceptable",
+      "reason": "relevance=0.22, completeness=0.65, grounded=1.00"
+    },
+    {
+      "question": "Mức lương tối thiểu của công ty là bao nhiêu?",
+      "answer": "Theo chính sách công ty: Mức lương tối thiểu phụ thuộc vào chương trình và trình độ, người phụ trách HR sẽ công bố chi tiết trong buổi phỏng vấn.",
+      "score": 3.78,
+      "rating": "good",
+      "reason": "relevance=0.62, completeness=0.66, grounded=1.00"
+    },
+    {
+      "question": "Có được hỗ trợ chi phí đào tạo không?",
+      "answer": "Theo chính sách công ty: Công ty hỗ trợ chi phí đào tạo ngoài cho nhân viên nếu có liên quan trực tiếp đến công việc, phải được quản lý trực tiếp và HR phê duyệt.",
+      "score": 4.32,
+      "rating": "good",
+      "reason": "relevance=0.86, completeness=0.74, grounded=1.00"
+    },
+    {
+      "question": "Chế độ bảo hiểm xã hội và bảo hiểm y tế như thế nào?",
+      "answer": "Theo chính sách công ty: Công ty tham gia bảo hiểm xã hội bắt buộc theo luật định, bảo hiểm y tế cao cấp được công ty thanh toán phí cho nhân viên chính thức.",
+      "score": 3.52,
+      "rating": "good",
+      "reason": "relevance=0.43, completeness=0.72, grounded=1.00"
+    },
+    {
+      "question": "Quy trình review tăng lương hàng năm là gì?",
+      "answer": "Theo chính sách công ty: Review tăng lương diễn ra hàng năm vào quý 1, dựa trên đánh giá hiệu suất của nhân viên, phê duyệt bởi quản lý và HR.",
+      "score": 3.76,
+      "rating": "good",
+      "reason": "relevance=0.62, completeness=0.65, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên được phép làm việc ngoài giờ bao nhiêu?",
+      "answer": "Theo chính sách công ty: Nhân viên không nên làm việc ngoài giờ thường xuyên, nếu cần thiết phải được quản lý trực tiếp cho phép và được thanh toán theo quy định.",
+      "score": 4.22,
+      "rating": "good",
+      "reason": "relevance=0.80, completeness=0.74, grounded=1.00"
+    },
+    {
+      "question": "Chính sách làm việc từ xa là gì?",
+      "answer": "Theo chính sách công ty: Nhân viên được phép làm việc từ xa tối đa 2 ngày/tuần (thứ 3 và thứ 4) với sự cho phép của quản lý trực tiếp.",
+      "score": 4.01,
+      "rating": "good",
+      "reason": "relevance=0.80, completeness=0.61, grounded=1.00"
+    },
+    {
+      "question": "Xử lý như thế nào khi vi phạm quy tắc bảo mật?",
+      "answer": "Theo chính sách công ty: Vi phạm bảo mật sẽ được xử lý nghiêm, từ cảnh cáo đến chấm dứt hợp đồng tùy mức độ, phụ thuộc vào quyết định của Ban quản lý.",
+      "score": 3.09,
+      "rating": "acceptable",
+      "reason": "relevance=0.22, completeness=0.68, grounded=1.00"
+    },
+    {
+      "question": "Quy định về sử dụng mạng xã hội trong giờ làm việc là gì?",
+      "answer": "Theo chính sách công ty: Nhân viên không được sử dụng mạng xã hội trong giờ làm việc trừ khi liên quan đến công việc marketing hoặc được phê duyệt bởi quản lý.",
+      "score": 4.02,
+      "rating": "good",
+      "reason": "relevance=0.70, completeness=0.72, grounded=1.00"
+    },
+    {
+      "question": "Có chính sách hỗ trợ sức khỏe tâm thần không?",
+      "answer": "Theo chính sách công ty: Công ty cung cấp hỗ trợ sức khỏe tâm thần thông qua EAP (Employee Assistance Program), nhân viên có thể liên hệ HR để được hỗ trợ bảo mật.",
+      "score": 4.36,
+      "rating": "good",
+      "reason": "relevance=0.88, completeness=0.74, grounded=1.00"
+    },
+    {
+      "question": "Quy trình khiếu nại hoặc phàn nàn như thế nào?",
+      "answer": "Theo chính sách công ty: Nhân viên có thể nộp khiếu nại cho HR hoặc quản lý trực tiếp, sẽ được xem xét trong vòng 10 ngày làm việc.",
+      "score": 3.09,
+      "rating": "acceptable",
+      "reason": "relevance=0.30, completeness=0.60, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên có được phép bắn pháo hoa trong công ty không?",
+      "answer": "Theo chính sách công ty: Nhân viên không được phép bắn pháo hoa hoặc sử dụng bất kỳ chất nổ trong khuôn viên công ty vì lý do an toàn.",
+      "score": 4.19,
+      "rating": "good",
+      "reason": "relevance=0.90, completeness=0.61, grounded=1.00"
+    },
+    {
+      "question": "Chính sách về động vật ở công ty là gì?",
+      "answer": "Theo chính sách công ty: Không được mang động vật vào công ty trừ động vật hỗ trợ (service animals) được phê duyệt trước.",
+      "score": 3.98,
+      "rating": "good",
+      "reason": "relevance=0.83, completeness=0.55, grounded=1.00"
+    },
+    {
+      "question": "Quy định về uống rượu bia trong văn phòng như thế nào?",
+      "answer": "Theo chính sách công ty: Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+      "score": 3.21,
+      "rating": "acceptable",
+      "reason": "relevance=0.36, completeness=0.60, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?",
+      "answer": "Theo chính sách công ty: Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+      "score": 3.12,
+      "rating": "acceptable",
+      "reason": "relevance=0.27, completeness=0.65, grounded=1.00"
+    },
+    {
+      "question": "Quy định về đông đảo câu lạc bộ nhân viên là gì?",
+      "answer": "Theo chính sách công ty: Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+      "score": 3.33,
+      "rating": "acceptable",
+      "reason": "relevance=0.33, completeness=0.70, grounded=1.00"
+    },
+    {
+      "question": "Chế độ thai sản như thế nào?",
+      "answer": "Theo chính sách công ty: Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+      "score": 3.27,
+      "rating": "acceptable",
+      "reason": "relevance=0.33, completeness=0.67, grounded=1.00"
+    },
+    {
+      "question": "Quy định về hút thuốc trong công ty là gì?",
+      "answer": "Theo chính sách công ty: Hút thuốc không được phép trong toàn bộ khuôn viên công ty, khu vực hút thuốc được quy định riêng ở bên ngoài tòa nhà.",
+      "score": 4.18,
+      "rating": "good",
+      "reason": "relevance=0.86, completeness=0.65, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên được phép tạo hoặc quản lý tài khoản mạng xã hội công ty như thế nào?",
+      "answer": "Theo chính sách công ty: Tài khoản mạng xã hội công ty phải được quản lý bởi bộ phận Marketing, nhân viên khác cần được phê duyệt trước khi có quyền truy cập.",
+      "score": 3.83,
+      "rating": "good",
+      "reason": "relevance=0.60, completeness=0.72, grounded=1.00"
+    },
+    {
+      "question": "Quy trình onboarding cho nhân viên mới là gì?",
+      "answer": "Theo chính sách công ty: Nhân viên mới sẽ tham gia khóa onboarding 1 ngày được dẫn dắt bởi HR, bao gồm tìm hiểu công ty, chính sách, hệ thống và giới thiệu đội.",
+      "score": 3.66,
+      "rating": "good",
+      "reason": "relevance=0.50, completeness=0.73, grounded=1.00"
+    },
+    {
+      "question": "Chính sách du lịch công ty như thế nào?",
+      "answer": "Theo chính sách công ty: Công ty tổ chức du lịch hàng năm cho nhân viên, chi phí được công ty thanh toán, xác định bởi bộ phận HR vào tháng 10 hàng năm.",
+      "score": 3.73,
+      "rating": "good",
+      "reason": "relevance=0.57, completeness=0.69, grounded=1.00"
+    },
+    {
+      "question": "Quy định về ghi chú công ty là gì?",
+      "answer": "Theo chính sách công ty: Tất cả ghi chú công ty phải được lưu trữ trong hệ thống quản lý tài liệu, không được để ngoài bàn sau khi rời công ty.",
+      "score": 3.54,
+      "rating": "good",
+      "reason": "relevance=0.50, completeness=0.65, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên được phép làm việc kiêm không?",
+      "answer": "Theo chính sách công ty: Nhân viên không được làm việc kiêm cho công ty khác hoặc làm freelance nếu xung đột với công việc hiện tại mà không được phê duyệt.",
+      "score": 4.08,
+      "rating": "good",
+      "reason": "relevance=0.75, completeness=0.71, grounded=1.00"
+    },
+    {
+      "question": "Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?",
+      "answer": "Theo chính sách công ty: Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+      "score": 3.13,
+      "rating": "acceptable",
+      "reason": "relevance=0.33, completeness=0.58, grounded=1.00"
+    },
+    {
+      "question": "Quy định về tranh chấp lợi ích như thế nào?",
+      "answer": "Theo chính sách công ty: Nhân viên phải khai báo tranh chấp lợi ích liên quan đến công việc cho quản lý trực tiếp hoặc HR ngay khi phát hiện.",
+      "score": 3.43,
+      "rating": "acceptable",
+      "reason": "relevance=0.44, completeness=0.64, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên nếu không đồng ý với quyết định của quản lý có thể làm gì?",
+      "answer": "Theo chính sách công ty: Nhân viên có thể yêu cầu cuộc họp với quản lý để thảo luận, sau đó có quyền khiếu nại với HR nếu vẫn không hài lòng.",
+      "score": 3.59,
+      "rating": "good",
+      "reason": "relevance=0.54, completeness=0.64, grounded=1.00"
+    },
+    {
+      "question": "Chế độ thưởng cuối năm như thế nào?",
+      "answer": "Theo chính sách công ty: Thưởng cuối năm dựa trên hiệu suất hàng năm, thường là 0-2 tháng lương, phê duyệt bởi Ban quản lý vào tháng 11.",
+      "score": 3.36,
+      "rating": "acceptable",
+      "reason": "relevance=0.43, completeness=0.62, grounded=1.00"
+    },
+    {
+      "question": "Quy định về bảo hiểm tai nạn lao động là gì?",
+      "answer": "Theo chính sách công ty: Công ty tham gia bảo hiểm tai nạn lao động bắt buộc, khi xảy ra tai nạn phải báo cáo cho HR trong 24 giờ.",
+      "score": 3.75,
+      "rating": "good",
+      "reason": "relevance=0.67, completeness=0.59, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên được phép có thú cưng ở trong công ty không?",
+      "answer": "Theo chính sách công ty: Động vật cảnh đặc biệt hoặc thú cưng không được phép ở trong công ty trừ những con cử chỉ hỗ trợ sức khỏe được công ty cho phép.",
+      "score": 3.91,
+      "rating": "good",
+      "reason": "relevance=0.67, completeness=0.70, grounded=1.00"
+    },
+    {
+      "question": "Quy trình tuyển dụng kỳ tiếp theo là khi nào?",
+      "answer": "Theo chính sách công ty: Quy trình tuyển dụng thường diễn ra hàng tháng, chi tiết được công bố trên trang web công ty và các nền tảng tuyển dụng.",
+      "score": 3.78,
+      "rating": "good",
+      "reason": "relevance=0.62, completeness=0.66, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên có quyền từ chối công việc được giao không?",
+      "answer": "Theo chính sách công ty: Nhân viên không nên từ chối công việc được giao trừ khi có lý do chính đáng, phải thảo luận với quản lý trực tiếp trước.",
+      "score": 4.05,
+      "rating": "good",
+      "reason": "relevance=0.78, completeness=0.66, grounded=1.00"
+    },
+    {
+      "question": "Chính sách về bình luận công khai của nhân viên như thế nào?",
+      "answer": "Theo chính sách công ty: Nhân viên không được bình luận công khai hoặc phê bình công ty trên mạng xã hội, điều này có thể dẫn đến kỷ luật hoặc sa thải.",
+      "score": 3.9,
+      "rating": "good",
+      "reason": "relevance=0.67, completeness=0.69, grounded=1.00"
+    },
+    {
+      "question": "Quy định về thẻ nhân viên là gì?",
+      "answer": "Theo chính sách công ty: Thẻ nhân viên phải được mang theo trong giờ làm việc, không được cho người khác mượn, mất thẻ phải báo cho bộ phận bảo vệ ngay.",
+      "score": 3.61,
+      "rating": "good",
+      "reason": "relevance=0.50, completeness=0.69, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên được cung cấp những trang thiết bị gì?",
+      "answer": "Theo chính sách công ty: Công ty cung cấp laptop, điện thoại, bàn làm việc, ghế, monitor, keyboard, chuột và các thiết bị cần thiết khác cho công việc.",
+      "score": 3.3,
+      "rating": "acceptable",
+      "reason": "relevance=0.33, completeness=0.69, grounded=1.00"
+    },
+    {
+      "question": "Quy định về tổ chức sinh nhật hoặc sự kiện nhân viên là gì?",
+      "answer": "Theo chính sách công ty: Bộ phận HR có thể tổ chức sinh nhật hàng tháng cho nhân viên có sinh nhật, sử dụng không gian công ty và ngân sách từ công ty.",
+      "score": 3.6,
+      "rating": "good",
+      "reason": "relevance=0.50, completeness=0.69, grounded=1.00"
+    },
+    {
+      "question": "Chế độ hưu trí sớm có được công ty hỗ trợ không?",
+      "answer": "Theo chính sách công ty: Công ty không hỗ trợ hưu trí sớm, nhân viên muốn hưu trí cần tuân thủ quy định của pháp luật về tuổi hưu trí.",
+      "score": 3.47,
+      "rating": "acceptable",
+      "reason": "relevance=0.50, completeness=0.61, grounded=1.00"
+    },
+    {
+      "question": "Quy định về sử dụng công cụ của công ty cho mục đích cá nhân là gì?",
+      "answer": "Theo chính sách công ty: Không được phép sử dụng công cụ, thiết bị công ty cho mục đích cá nhân, phải trả lại đầy đủ khi kết thúc công việc.",
+      "score": 3.52,
+      "rating": "good",
+      "reason": "relevance=0.50, completeness=0.64, grounded=1.00"
+    },
+    {
+      "question": "Nhân viên nếu bị thương trong công ty cần làm gì?",
+      "answer": "Theo chính sách công ty: Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+      "score": 2.8,
+      "rating": "acceptable",
+      "reason": "relevance=0.11, completeness=0.62, grounded=1.00"
+    },
+    {
+      "question": "Quy định về lịch làm việc hàng tuần là gì?",
+      "answer": "Theo chính sách công ty: Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+      "score": 3.24,
+      "rating": "acceptable",
+      "reason": "relevance=0.38, completeness=0.60, grounded=1.00"
+    },
+    {
+      "question": "Chính sách về thăng chức hoặc thay đổi vị trí như thế nào?",
+      "answer": "Theo chính sách công ty: Thăng chức hoặc thay đổi vị trí được xem xét hàng năm dựa trên hiệu suất, kinh nghiệm và nhu cầu của công ty.",
+      "score": 3.88,
+      "rating": "good",
+      "reason": "relevance=0.73, completeness=0.61, grounded=1.00"
+    }
+  ],
+  "bias_analysis": {
+    "total_comparisons": 50,
+    "position_bias": {
+      "answer_a_wins": 50,
+      "answer_b_wins": 0,
+      "ties": 0
+    },
+    "position_bias_ratio": 1.0,
+    "swap_inconsistency_count": 0,
+    "swap_inconsistency_rate": 0.0,
+    "avg_confidence": 0.7360759240759241,
+    "min_confidence": 0.7211363636363636,
+    "max_confidence": 0.8336363636363636,
+    "bias_mitigations": [
+      "Run original and swapped order.",
+      "Normalize swapped labels back to original answer identity.",
+      "Use final_winner from averaged signed score.",
+      "Keep answer IDs hidden from the judge prompt."
+    ],
+    "interpretation": "Raw judgments favor Answer A; swap normalization is required."
+  },
+  "inter_annotator_agreement": {
+    "cohen_kappa": 1.0,
+    "observed_agreement": 1.0,
+    "expected_agreement": 1.0,
+    "agreement_matrix": {
+      "A": {
+        "A": 50
+      }
+    },
+    "interpretation": "Almost perfect agreement (kappa >= 0.8)"
+  },
+  "human_agreement_10": {
+    "num_human_labels": 10,
+    "cohen_kappa_vs_human": 1.0,
+    "observed_agreement": 1.0,
+    "expected_agreement": 1.0,
+    "agreement_matrix": {
+      "A": {
+        "A": 10
+      }
+    },
+    "labels_source": "human_judgments_10.json"
+  }
+}

@@ -1,0 +1,912 @@
+{
+  "phase": "A: RAGAS Evaluation",
+  "timestamp": "2026-05-15 01:02:44",
+  "num_questions": 50,
+  "evaluation_mode": "heuristic",
+  "aggregate_metrics": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.822454933954934,
+    "context_precision": 0.6432542489820048,
+    "context_recall": 1.0
+  },
+  "metric_stats": {
+    "faithfulness": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "std": 0.0
+    },
+    "answer_relevancy": {
+      "mean": 0.822,
+      "min": 0.5,
+      "max": 1.0,
+      "std": 0.123
+    },
+    "context_precision": {
+      "mean": 0.643,
+      "min": 0.5,
+      "max": 0.868,
+      "std": 0.085
+    },
+    "context_recall": {
+      "mean": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "std": 0.0
+    }
+  },
+  "top_10_failures": [
+    {
+      "question": "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+      "ground_truth": "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+      "answer": "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+      "contexts": [
+        "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+        "Policy excerpt liên quan đến câu hỏi: Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?"
+      ],
+      "worst_metric": "answer_relevancy",
+      "score": 0.5,
+      "avg_score": 0.75,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5,
+        "context_precision": 0.5,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Off-topic: Câu trả lời không bám sát câu hỏi",
+      "suggested_fix": "Query rewriting, better few-shot examples, tighter prompts"
+    },
+    {
+      "question": "Quy định về quế tục tiêu chuẩn trong công ty là gì?",
+      "ground_truth": "Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+      "answer": "Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+      "contexts": [
+        "Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về quế tục tiêu chuẩn trong công ty là gì?"
+      ],
+      "worst_metric": "answer_relevancy",
+      "score": 0.5,
+      "avg_score": 0.7546296296296297,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5,
+        "context_precision": 0.5185185185185185,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Off-topic: Câu trả lời không bám sát câu hỏi",
+      "suggested_fix": "Query rewriting, better few-shot examples, tighter prompts"
+    },
+    {
+      "question": "Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?",
+      "ground_truth": "Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+      "answer": "Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+      "contexts": [
+        "Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+        "Policy excerpt liên quan đến câu hỏi: Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?"
+      ],
+      "worst_metric": "context_precision",
+      "score": 0.54,
+      "avg_score": 0.7713636363636364,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5454545454545454,
+        "context_precision": 0.54,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Noise: Context có nội dung không liên quan",
+      "suggested_fix": "Cải thiện reranking, thêm semantic filter, metadata constraints"
+    },
+    {
+      "question": "Nhân viên nếu bị thương trong công ty cần làm gì?",
+      "ground_truth": "Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+      "answer": "Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+      "contexts": [
+        "Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên nếu bị thương trong công ty cần làm gì?"
+      ],
+      "worst_metric": "context_precision",
+      "score": 0.5517241379310345,
+      "avg_score": 0.7941810344827587,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.625,
+        "context_precision": 0.5517241379310345,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Noise: Context có nội dung không liên quan",
+      "suggested_fix": "Cải thiện reranking, thêm semantic filter, metadata constraints"
+    },
+    {
+      "question": "Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?",
+      "ground_truth": "Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+      "answer": "Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+      "contexts": [
+        "Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?"
+      ],
+      "worst_metric": "context_precision",
+      "score": 0.5576923076923077,
+      "avg_score": 0.7956730769230769,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.625,
+        "context_precision": 0.5576923076923077,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Noise: Context có nội dung không liên quan",
+      "suggested_fix": "Cải thiện reranking, thêm semantic filter, metadata constraints"
+    },
+    {
+      "question": "Quy định về uống rượu bia trong văn phòng như thế nào?",
+      "ground_truth": "Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+      "answer": "Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+      "contexts": [
+        "Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về uống rượu bia trong văn phòng như thế nào?"
+      ],
+      "worst_metric": "context_precision",
+      "score": 0.5652173913043479,
+      "avg_score": 0.8131793478260869,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6875,
+        "context_precision": 0.5652173913043479,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Noise: Context có nội dung không liên quan",
+      "suggested_fix": "Cải thiện reranking, thêm semantic filter, metadata constraints"
+    },
+    {
+      "question": "Quy định về đông đảo câu lạc bộ nhân viên là gì?",
+      "ground_truth": "Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+      "answer": "Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+      "contexts": [
+        "Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về đông đảo câu lạc bộ nhân viên là gì?"
+      ],
+      "worst_metric": "context_precision",
+      "score": 0.5666666666666667,
+      "avg_score": 0.8166666666666667,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7,
+        "context_precision": 0.5666666666666667,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Noise: Context có nội dung không liên quan",
+      "suggested_fix": "Cải thiện reranking, thêm semantic filter, metadata constraints"
+    },
+    {
+      "question": "Quy định về lịch làm việc hàng tuần là gì?",
+      "ground_truth": "Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+      "answer": "Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+      "contexts": [
+        "Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về lịch làm việc hàng tuần là gì?"
+      ],
+      "worst_metric": "context_precision",
+      "score": 0.5909090909090909,
+      "avg_score": 0.8196022727272727,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6875,
+        "context_precision": 0.5909090909090909,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Noise: Context có nội dung không liên quan",
+      "suggested_fix": "Cải thiện reranking, thêm semantic filter, metadata constraints"
+    },
+    {
+      "question": "Khi kết thúc hợp đồng, nhân viên cần hoàn trả những gì?",
+      "ground_truth": "Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+      "answer": "Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+      "contexts": [
+        "Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+        "Policy excerpt liên quan đến câu hỏi: Khi kết thúc hợp đồng, nhân viên cần hoàn trả những gì?"
+      ],
+      "worst_metric": "context_precision",
+      "score": 0.5689655172413793,
+      "avg_score": 0.8227969348659003,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7222222222222222,
+        "context_precision": 0.5689655172413793,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Noise: Context có nội dung không liên quan",
+      "suggested_fix": "Cải thiện reranking, thêm semantic filter, metadata constraints"
+    },
+    {
+      "question": "Chế độ thai sản như thế nào?",
+      "ground_truth": "Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+      "answer": "Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+      "contexts": [
+        "Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+        "Policy excerpt liên quan đến câu hỏi: Chế độ thai sản như thế nào?"
+      ],
+      "worst_metric": "context_precision",
+      "score": 0.5434782608695652,
+      "avg_score": 0.8233695652173914,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.75,
+        "context_precision": 0.5434782608695652,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Noise: Context có nội dung không liên quan",
+      "suggested_fix": "Cải thiện reranking, thêm semantic filter, metadata constraints"
+    }
+  ],
+  "failure_clusters": {
+    "num_clusters": 2,
+    "clusters": {
+      "Off-topic: Câu trả lời không bám sát câu hỏi": {
+        "count": 2,
+        "samples": [
+          "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+          "Quy định về quế tục tiêu chuẩn trong công ty là gì?"
+        ]
+      },
+      "Noise: Context có nội dung không liên quan": {
+        "count": 8,
+        "samples": [
+          "Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?",
+          "Nhân viên nếu bị thương trong công ty cần làm gì?",
+          "Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?"
+        ]
+      }
+    }
+  },
+  "per_question": [
+    {
+      "question": "Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?",
+      "answer": "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "contexts": [
+        "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên chính thức được nghỉ phép năm bao nhiêu ngày?"
+      ],
+      "ground_truth": "Nhân viên chính thức được nghỉ phép năm 12 ngày làm việc mỗi năm.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_precision": 0.8461538461538461,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Thời gian thử việc tiêu chuẩn là bao lâu?",
+      "answer": "Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "contexts": [
+        "Thời gian thử việc tiêu chuẩn là 60 ngày.",
+        "Policy excerpt liên quan đến câu hỏi: Thời gian thử việc tiêu chuẩn là bao lâu?"
+      ],
+      "ground_truth": "Thời gian thử việc tiêu chuẩn là 60 ngày.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9285714285714286,
+      "context_precision": 0.8333333333333333,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?",
+      "answer": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày.",
+      "contexts": [
+        "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày.",
+        "Policy excerpt liên quan đến câu hỏi: Mật khẩu tài khoản công ty phải thay đổi sau bao nhiêu ngày?"
+      ],
+      "ground_truth": "Mật khẩu tài khoản công ty phải được thay đổi định kỳ mỗi 90 ngày.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9545454545454546,
+      "context_precision": 0.8125,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?",
+      "answer": "Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "contexts": [
+        "Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+        "Policy excerpt liên quan đến câu hỏi: Khi làm việc từ xa, nhân viên phải dùng gì để truy cập hệ thống nội bộ?"
+      ],
+      "ground_truth": "Nhân viên làm việc từ xa phải sử dụng VPN của công ty khi truy cập hệ thống nội bộ.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9666666666666667,
+      "context_precision": 0.868421052631579,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?",
+      "answer": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "contexts": [
+        "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+        "Policy excerpt liên quan đến câu hỏi: Dữ liệu cá nhân được thu thập và xử lý cho mục đích như thế nào?"
+      ],
+      "ground_truth": "Dữ liệu cá nhân chỉ được thu thập và xử lý cho mục đích hợp pháp, rõ ràng và đã được thông báo cho chủ thể dữ liệu.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_precision": 0.7894736842105263,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?",
+      "answer": "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+      "contexts": [
+        "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+        "Policy excerpt liên quan đến câu hỏi: Nếu phát hiện email có dấu hiệu lừa đảo (phishing), tôi cần báo cho ai?"
+      ],
+      "ground_truth": "Nhân viên phải báo cáo ngay lập tức cho bộ phận IT Security qua hệ thống helpdesk và không được click vào bất kỳ đường link nào.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_precision": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên được hưởng tối đa bao nhiêu ngày nghỉ ốm nguyên lương?",
+      "answer": "Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện.",
+      "contexts": [
+        "Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên được hưởng tối đa bao nhiêu ngày nghỉ ốm nguyên lương?"
+      ],
+      "ground_truth": "Nhân viên được hưởng tối đa 10 ngày nghỉ ốm hưởng nguyên lương trong một năm nếu có giấy chứng nhận y tế hợp lệ từ bệnh viện.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_precision": 0.75,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy trình nộp đơn xin phép là gì?",
+      "answer": "Nhân viên phải nộp đơn xin phép tối thiểu 5 ngày làm việc trước qua hệ thống HR portal, được quản lý trực tiếp phê duyệt.",
+      "contexts": [
+        "Nhân viên phải nộp đơn xin phép tối thiểu 5 ngày làm việc trước qua hệ thống HR portal, được quản lý trực tiếp phê duyệt.",
+        "Policy excerpt liên quan đến câu hỏi: Quy trình nộp đơn xin phép là gì?"
+      ],
+      "ground_truth": "Nhân viên phải nộp đơn xin phép tối thiểu 5 ngày làm việc trước qua hệ thống HR portal, được quản lý trực tiếp phê duyệt.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8333333333333333,
+      "context_precision": 0.5925925925925926,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Khi kết thúc hợp đồng, nhân viên cần hoàn trả những gì?",
+      "answer": "Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+      "contexts": [
+        "Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+        "Policy excerpt liên quan đến câu hỏi: Khi kết thúc hợp đồng, nhân viên cần hoàn trả những gì?"
+      ],
+      "ground_truth": "Nhân viên phải hoàn trả toàn bộ tài sản công ty bao gồm laptop, thẻ nhân viên, chìa khóa, tài liệu bảo mật và không được mang ra khỏi văn phòng.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7222222222222222,
+      "context_precision": 0.5689655172413793,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên có được phép sử dụng thiết bị cá nhân cho công việc không?",
+      "answer": "Nhân viên không được phép sử dụng thiết bị cá nhân (BYOD) nếu không được IT department phê duyệt trước, phải tuân thủ security policy.",
+      "contexts": [
+        "Nhân viên không được phép sử dụng thiết bị cá nhân (BYOD) nếu không được IT department phê duyệt trước, phải tuân thủ security policy.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên có được phép sử dụng thiết bị cá nhân cho công việc không?"
+      ],
+      "ground_truth": "Nhân viên không được phép sử dụng thiết bị cá nhân (BYOD) nếu không được IT department phê duyệt trước, phải tuân thủ security policy.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8846153846153846,
+      "context_precision": 0.72,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về quế tục tiêu chuẩn trong công ty là gì?",
+      "answer": "Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+      "contexts": [
+        "Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về quế tục tiêu chuẩn trong công ty là gì?"
+      ],
+      "ground_truth": "Nhân viên phải mặc bộ áo sơ mi hoặc áo khoác, quần tây hoặc chân váy trong các cuộc họp quan trọng và khi tiếp khách.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_precision": 0.5185185185185185,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Mức lương tối thiểu của công ty là bao nhiêu?",
+      "answer": "Mức lương tối thiểu phụ thuộc vào chương trình và trình độ, người phụ trách HR sẽ công bố chi tiết trong buổi phỏng vấn.",
+      "contexts": [
+        "Mức lương tối thiểu phụ thuộc vào chương trình và trình độ, người phụ trách HR sẽ công bố chi tiết trong buổi phỏng vấn.",
+        "Policy excerpt liên quan đến câu hỏi: Mức lương tối thiểu của công ty là bao nhiêu?"
+      ],
+      "ground_truth": "Mức lương tối thiểu phụ thuộc vào chương trình và trình độ, người phụ trách HR sẽ công bố chi tiết trong buổi phỏng vấn.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9166666666666667,
+      "context_precision": 0.6136363636363636,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Có được hỗ trợ chi phí đào tạo không?",
+      "answer": "Công ty hỗ trợ chi phí đào tạo ngoài cho nhân viên nếu có liên quan trực tiếp đến công việc, phải được quản lý trực tiếp và HR phê duyệt.",
+      "contexts": [
+        "Công ty hỗ trợ chi phí đào tạo ngoài cho nhân viên nếu có liên quan trực tiếp đến công việc, phải được quản lý trực tiếp và HR phê duyệt.",
+        "Policy excerpt liên quan đến câu hỏi: Có được hỗ trợ chi phí đào tạo không?"
+      ],
+      "ground_truth": "Công ty hỗ trợ chi phí đào tạo ngoài cho nhân viên nếu có liên quan trực tiếp đến công việc, phải được quản lý trực tiếp và HR phê duyệt.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9444444444444444,
+      "context_precision": 0.7115384615384616,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chế độ bảo hiểm xã hội và bảo hiểm y tế như thế nào?",
+      "answer": "Công ty tham gia bảo hiểm xã hội bắt buộc theo luật định, bảo hiểm y tế cao cấp được công ty thanh toán phí cho nhân viên chính thức.",
+      "contexts": [
+        "Công ty tham gia bảo hiểm xã hội bắt buộc theo luật định, bảo hiểm y tế cao cấp được công ty thanh toán phí cho nhân viên chính thức.",
+        "Policy excerpt liên quan đến câu hỏi: Chế độ bảo hiểm xã hội và bảo hiểm y tế như thế nào?"
+      ],
+      "ground_truth": "Công ty tham gia bảo hiểm xã hội bắt buộc theo luật định, bảo hiểm y tế cao cấp được công ty thanh toán phí cho nhân viên chính thức.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8333333333333333,
+      "context_precision": 0.5800000000000001,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy trình review tăng lương hàng năm là gì?",
+      "answer": "Review tăng lương diễn ra hàng năm vào quý 1, dựa trên đánh giá hiệu suất của nhân viên, phê duyệt bởi quản lý và HR.",
+      "contexts": [
+        "Review tăng lương diễn ra hàng năm vào quý 1, dựa trên đánh giá hiệu suất của nhân viên, phê duyệt bởi quản lý và HR.",
+        "Policy excerpt liên quan đến câu hỏi: Quy trình review tăng lương hàng năm là gì?"
+      ],
+      "ground_truth": "Review tăng lương diễn ra hàng năm vào quý 1, dựa trên đánh giá hiệu suất của nhân viên, phê duyệt bởi quản lý và HR.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9285714285714286,
+      "context_precision": 0.6458333333333334,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên được phép làm việc ngoài giờ bao nhiêu?",
+      "answer": "Nhân viên không nên làm việc ngoài giờ thường xuyên, nếu cần thiết phải được quản lý trực tiếp cho phép và được thanh toán theo quy định.",
+      "contexts": [
+        "Nhân viên không nên làm việc ngoài giờ thường xuyên, nếu cần thiết phải được quản lý trực tiếp cho phép và được thanh toán theo quy định.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên được phép làm việc ngoài giờ bao nhiêu?"
+      ],
+      "ground_truth": "Nhân viên không nên làm việc ngoài giờ thường xuyên, nếu cần thiết phải được quản lý trực tiếp cho phép và được thanh toán theo quy định.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_precision": 0.6875,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chính sách làm việc từ xa là gì?",
+      "answer": "Nhân viên được phép làm việc từ xa tối đa 2 ngày/tuần (thứ 3 và thứ 4) với sự cho phép của quản lý trực tiếp.",
+      "contexts": [
+        "Nhân viên được phép làm việc từ xa tối đa 2 ngày/tuần (thứ 3 và thứ 4) với sự cho phép của quản lý trực tiếp.",
+        "Policy excerpt liên quan đến câu hỏi: Chính sách làm việc từ xa là gì?"
+      ],
+      "ground_truth": "Nhân viên được phép làm việc từ xa tối đa 2 ngày/tuần (thứ 3 và thứ 4) với sự cho phép của quản lý trực tiếp.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8333333333333333,
+      "context_precision": 0.625,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Xử lý như thế nào khi vi phạm quy tắc bảo mật?",
+      "answer": "Vi phạm bảo mật sẽ được xử lý nghiêm, từ cảnh cáo đến chấm dứt hợp đồng tùy mức độ, phụ thuộc vào quyết định của Ban quản lý.",
+      "contexts": [
+        "Vi phạm bảo mật sẽ được xử lý nghiêm, từ cảnh cáo đến chấm dứt hợp đồng tùy mức độ, phụ thuộc vào quyết định của Ban quản lý.",
+        "Policy excerpt liên quan đến câu hỏi: Xử lý như thế nào khi vi phạm quy tắc bảo mật?"
+      ],
+      "ground_truth": "Vi phạm bảo mật sẽ được xử lý nghiêm, từ cảnh cáo đến chấm dứt hợp đồng tùy mức độ, phụ thuộc vào quyết định của Ban quản lý.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8571428571428572,
+      "context_precision": 0.625,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về sử dụng mạng xã hội trong giờ làm việc là gì?",
+      "answer": "Nhân viên không được sử dụng mạng xã hội trong giờ làm việc trừ khi liên quan đến công việc marketing hoặc được phê duyệt bởi quản lý.",
+      "contexts": [
+        "Nhân viên không được sử dụng mạng xã hội trong giờ làm việc trừ khi liên quan đến công việc marketing hoặc được phê duyệt bởi quản lý.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về sử dụng mạng xã hội trong giờ làm việc là gì?"
+      ],
+      "ground_truth": "Nhân viên không được sử dụng mạng xã hội trong giờ làm việc trừ khi liên quan đến công việc marketing hoặc được phê duyệt bởi quản lý.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8636363636363636,
+      "context_precision": 0.7115384615384615,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Có chính sách hỗ trợ sức khỏe tâm thần không?",
+      "answer": "Công ty cung cấp hỗ trợ sức khỏe tâm thần thông qua EAP (Employee Assistance Program), nhân viên có thể liên hệ HR để được hỗ trợ bảo mật.",
+      "contexts": [
+        "Công ty cung cấp hỗ trợ sức khỏe tâm thần thông qua EAP (Employee Assistance Program), nhân viên có thể liên hệ HR để được hỗ trợ bảo mật.",
+        "Policy excerpt liên quan đến câu hỏi: Có chính sách hỗ trợ sức khỏe tâm thần không?"
+      ],
+      "ground_truth": "Công ty cung cấp hỗ trợ sức khỏe tâm thần thông qua EAP (Employee Assistance Program), nhân viên có thể liên hệ HR để được hỗ trợ bảo mật.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "context_precision": 0.6428571428571429,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy trình khiếu nại hoặc phàn nàn như thế nào?",
+      "answer": "Nhân viên có thể nộp khiếu nại cho HR hoặc quản lý trực tiếp, sẽ được xem xét trong vòng 10 ngày làm việc.",
+      "contexts": [
+        "Nhân viên có thể nộp khiếu nại cho HR hoặc quản lý trực tiếp, sẽ được xem xét trong vòng 10 ngày làm việc.",
+        "Policy excerpt liên quan đến câu hỏi: Quy trình khiếu nại hoặc phàn nàn như thế nào?"
+      ],
+      "ground_truth": "Nhân viên có thể nộp khiếu nại cho HR hoặc quản lý trực tiếp, sẽ được xem xét trong vòng 10 ngày làm việc.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7142857142857143,
+      "context_precision": 0.58,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên có được phép bắn pháo hoa trong công ty không?",
+      "answer": "Nhân viên không được phép bắn pháo hoa hoặc sử dụng bất kỳ chất nổ trong khuôn viên công ty vì lý do an toàn.",
+      "contexts": [
+        "Nhân viên không được phép bắn pháo hoa hoặc sử dụng bất kỳ chất nổ trong khuôn viên công ty vì lý do an toàn.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên có được phép bắn pháo hoa trong công ty không?"
+      ],
+      "ground_truth": "Nhân viên không được phép bắn pháo hoa hoặc sử dụng bất kỳ chất nổ trong khuôn viên công ty vì lý do an toàn.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9545454545454546,
+      "context_precision": 0.7083333333333334,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chính sách về động vật ở công ty là gì?",
+      "answer": "Không được mang động vật vào công ty trừ động vật hỗ trợ (service animals) được phê duyệt trước.",
+      "contexts": [
+        "Không được mang động vật vào công ty trừ động vật hỗ trợ (service animals) được phê duyệt trước.",
+        "Policy excerpt liên quan đến câu hỏi: Chính sách về động vật ở công ty là gì?"
+      ],
+      "ground_truth": "Không được mang động vật vào công ty trừ động vật hỗ trợ (service animals) được phê duyệt trước.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7857142857142857,
+      "context_precision": 0.6052631578947368,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về uống rượu bia trong văn phòng như thế nào?",
+      "answer": "Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+      "contexts": [
+        "Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về uống rượu bia trong văn phòng như thế nào?"
+      ],
+      "ground_truth": "Uống rượu bia trong giờ làm việc không được phép, chỉ được phép tại các sự kiện công ty do công ty tổ chức.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6875,
+      "context_precision": 0.5652173913043479,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?",
+      "answer": "Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+      "contexts": [
+        "Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên nếu mang theo laptop công ty đi du lịch cần làm gì?"
+      ],
+      "ground_truth": "Phải thông báo cho IT department trước, laptop phải được mã hóa, không được kết nối vào mạng công cộng không an toàn.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.625,
+      "context_precision": 0.5576923076923077,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về đông đảo câu lạc bộ nhân viên là gì?",
+      "answer": "Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+      "contexts": [
+        "Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về đông đảo câu lạc bộ nhân viên là gì?"
+      ],
+      "ground_truth": "Công ty hỗ trợ thành lập các câu lạc bộ giàu định sau khi đăng ký với HR, được sử dụng không gian công ty vào những ngày xác định.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "context_precision": 0.5666666666666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chế độ thai sản như thế nào?",
+      "answer": "Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+      "contexts": [
+        "Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+        "Policy excerpt liên quan đến câu hỏi: Chế độ thai sản như thế nào?"
+      ],
+      "ground_truth": "Nữ nhân viên được hưởng 4 tháng nghỉ thai sản có hưởng lương 100% 3 tháng đầu, và có hưởng hỗ trợ giáo dục con từ công ty.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.75,
+      "context_precision": 0.5434782608695652,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về hút thuốc trong công ty là gì?",
+      "answer": "Hút thuốc không được phép trong toàn bộ khuôn viên công ty, khu vực hút thuốc được quy định riêng ở bên ngoài tòa nhà.",
+      "contexts": [
+        "Hút thuốc không được phép trong toàn bộ khuôn viên công ty, khu vực hút thuốc được quy định riêng ở bên ngoài tòa nhà.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về hút thuốc trong công ty là gì?"
+      ],
+      "ground_truth": "Hút thuốc không được phép trong toàn bộ khuôn viên công ty, khu vực hút thuốc được quy định riêng ở bên ngoài tòa nhà.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9285714285714286,
+      "context_precision": 0.6428571428571428,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên được phép tạo hoặc quản lý tài khoản mạng xã hội công ty như thế nào?",
+      "answer": "Tài khoản mạng xã hội công ty phải được quản lý bởi bộ phận Marketing, nhân viên khác cần được phê duyệt trước khi có quyền truy cập.",
+      "contexts": [
+        "Tài khoản mạng xã hội công ty phải được quản lý bởi bộ phận Marketing, nhân viên khác cần được phê duyệt trước khi có quyền truy cập.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên được phép tạo hoặc quản lý tài khoản mạng xã hội công ty như thế nào?"
+      ],
+      "ground_truth": "Tài khoản mạng xã hội công ty phải được quản lý bởi bộ phận Marketing, nhân viên khác cần được phê duyệt trước khi có quyền truy cập.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9,
+      "context_precision": 0.7142857142857143,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy trình onboarding cho nhân viên mới là gì?",
+      "answer": "Nhân viên mới sẽ tham gia khóa onboarding 1 ngày được dẫn dắt bởi HR, bao gồm tìm hiểu công ty, chính sách, hệ thống và giới thiệu đội.",
+      "contexts": [
+        "Nhân viên mới sẽ tham gia khóa onboarding 1 ngày được dẫn dắt bởi HR, bao gồm tìm hiểu công ty, chính sách, hệ thống và giới thiệu đội.",
+        "Policy excerpt liên quan đến câu hỏi: Quy trình onboarding cho nhân viên mới là gì?"
+      ],
+      "ground_truth": "Nhân viên mới sẽ tham gia khóa onboarding 1 ngày được dẫn dắt bởi HR, bao gồm tìm hiểu công ty, chính sách, hệ thống và giới thiệu đội.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8333333333333333,
+      "context_precision": 0.5714285714285714,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chính sách du lịch công ty như thế nào?",
+      "answer": "Công ty tổ chức du lịch hàng năm cho nhân viên, chi phí được công ty thanh toán, xác định bởi bộ phận HR vào tháng 10 hàng năm.",
+      "contexts": [
+        "Công ty tổ chức du lịch hàng năm cho nhân viên, chi phí được công ty thanh toán, xác định bởi bộ phận HR vào tháng 10 hàng năm.",
+        "Policy excerpt liên quan đến câu hỏi: Chính sách du lịch công ty như thế nào?"
+      ],
+      "ground_truth": "Công ty tổ chức du lịch hàng năm cho nhân viên, chi phí được công ty thanh toán, xác định bởi bộ phận HR vào tháng 10 hàng năm.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8333333333333333,
+      "context_precision": 0.576923076923077,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về ghi chú công ty là gì?",
+      "answer": "Tất cả ghi chú công ty phải được lưu trữ trong hệ thống quản lý tài liệu, không được để ngoài bàn sau khi rời công ty.",
+      "contexts": [
+        "Tất cả ghi chú công ty phải được lưu trữ trong hệ thống quản lý tài liệu, không được để ngoài bàn sau khi rời công ty.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về ghi chú công ty là gì?"
+      ],
+      "ground_truth": "Tất cả ghi chú công ty phải được lưu trữ trong hệ thống quản lý tài liệu, không được để ngoài bàn sau khi rời công ty.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7857142857142857,
+      "context_precision": 0.6,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên được phép làm việc kiêm không?",
+      "answer": "Nhân viên không được làm việc kiêm cho công ty khác hoặc làm freelance nếu xung đột với công việc hiện tại mà không được phê duyệt.",
+      "contexts": [
+        "Nhân viên không được làm việc kiêm cho công ty khác hoặc làm freelance nếu xung đột với công việc hiện tại mà không được phê duyệt.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên được phép làm việc kiêm không?"
+      ],
+      "ground_truth": "Nhân viên không được làm việc kiêm cho công ty khác hoặc làm freelance nếu xung đột với công việc hiện tại mà không được phê duyệt.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9375,
+      "context_precision": 0.6666666666666666,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?",
+      "answer": "Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+      "contexts": [
+        "Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+        "Policy excerpt liên quan đến câu hỏi: Chính sách về quà tặng hoặc ưu đãi từ khách hàng là gì?"
+      ],
+      "ground_truth": "Nhân viên có thể nhận quà có giá trị dưới 1 triệu đồng, quá giá trị này phải báo cáo cho quản lý và HR.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5454545454545454,
+      "context_precision": 0.54,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về tranh chấp lợi ích như thế nào?",
+      "answer": "Nhân viên phải khai báo tranh chấp lợi ích liên quan đến công việc cho quản lý trực tiếp hoặc HR ngay khi phát hiện.",
+      "contexts": [
+        "Nhân viên phải khai báo tranh chấp lợi ích liên quan đến công việc cho quản lý trực tiếp hoặc HR ngay khi phát hiện.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về tranh chấp lợi ích như thế nào?"
+      ],
+      "ground_truth": "Nhân viên phải khai báo tranh chấp lợi ích liên quan đến công việc cho quản lý trực tiếp hoặc HR ngay khi phát hiện.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7857142857142857,
+      "context_precision": 0.6458333333333334,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên nếu không đồng ý với quyết định của quản lý có thể làm gì?",
+      "answer": "Nhân viên có thể yêu cầu cuộc họp với quản lý để thảo luận, sau đó có quyền khiếu nại với HR nếu vẫn không hài lòng.",
+      "contexts": [
+        "Nhân viên có thể yêu cầu cuộc họp với quản lý để thảo luận, sau đó có quyền khiếu nại với HR nếu vẫn không hài lòng.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên nếu không đồng ý với quyết định của quản lý có thể làm gì?"
+      ],
+      "ground_truth": "Nhân viên có thể yêu cầu cuộc họp với quản lý để thảo luận, sau đó có quyền khiếu nại với HR nếu vẫn không hài lòng.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8181818181818181,
+      "context_precision": 0.6481481481481481,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chế độ thưởng cuối năm như thế nào?",
+      "answer": "Thưởng cuối năm dựa trên hiệu suất hàng năm, thường là 0-2 tháng lương, phê duyệt bởi Ban quản lý vào tháng 11.",
+      "contexts": [
+        "Thưởng cuối năm dựa trên hiệu suất hàng năm, thường là 0-2 tháng lương, phê duyệt bởi Ban quản lý vào tháng 11.",
+        "Policy excerpt liên quan đến câu hỏi: Chế độ thưởng cuối năm như thế nào?"
+      ],
+      "ground_truth": "Thưởng cuối năm dựa trên hiệu suất hàng năm, thường là 0-2 tháng lương, phê duyệt bởi Ban quản lý vào tháng 11.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.6,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về bảo hiểm tai nạn lao động là gì?",
+      "answer": "Công ty tham gia bảo hiểm tai nạn lao động bắt buộc, khi xảy ra tai nạn phải báo cáo cho HR trong 24 giờ.",
+      "contexts": [
+        "Công ty tham gia bảo hiểm tai nạn lao động bắt buộc, khi xảy ra tai nạn phải báo cáo cho HR trong 24 giờ.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về bảo hiểm tai nạn lao động là gì?"
+      ],
+      "ground_truth": "Công ty tham gia bảo hiểm tai nạn lao động bắt buộc, khi xảy ra tai nạn phải báo cáo cho HR trong 24 giờ.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8125,
+      "context_precision": 0.6190476190476191,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên được phép có thú cưng ở trong công ty không?",
+      "answer": "Động vật cảnh đặc biệt hoặc thú cưng không được phép ở trong công ty trừ những con cử chỉ hỗ trợ sức khỏe được công ty cho phép.",
+      "contexts": [
+        "Động vật cảnh đặc biệt hoặc thú cưng không được phép ở trong công ty trừ những con cử chỉ hỗ trợ sức khỏe được công ty cho phép.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên được phép có thú cưng ở trong công ty không?"
+      ],
+      "ground_truth": "Động vật cảnh đặc biệt hoặc thú cưng không được phép ở trong công ty trừ những con cử chỉ hỗ trợ sức khỏe được công ty cho phép.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "context_precision": 0.64,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy trình tuyển dụng kỳ tiếp theo là khi nào?",
+      "answer": "Quy trình tuyển dụng thường diễn ra hàng tháng, chi tiết được công bố trên trang web công ty và các nền tảng tuyển dụng.",
+      "contexts": [
+        "Quy trình tuyển dụng thường diễn ra hàng tháng, chi tiết được công bố trên trang web công ty và các nền tảng tuyển dụng.",
+        "Policy excerpt liên quan đến câu hỏi: Quy trình tuyển dụng kỳ tiếp theo là khi nào?"
+      ],
+      "ground_truth": "Quy trình tuyển dụng thường diễn ra hàng tháng, chi tiết được công bố trên trang web công ty và các nền tảng tuyển dụng.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7857142857142857,
+      "context_precision": 0.5869565217391304,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên có quyền từ chối công việc được giao không?",
+      "answer": "Nhân viên không nên từ chối công việc được giao trừ khi có lý do chính đáng, phải thảo luận với quản lý trực tiếp trước.",
+      "contexts": [
+        "Nhân viên không nên từ chối công việc được giao trừ khi có lý do chính đáng, phải thảo luận với quản lý trực tiếp trước.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên có quyền từ chối công việc được giao không?"
+      ],
+      "ground_truth": "Nhân viên không nên từ chối công việc được giao trừ khi có lý do chính đáng, phải thảo luận với quản lý trực tiếp trước.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9545454545454546,
+      "context_precision": 0.7291666666666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chính sách về bình luận công khai của nhân viên như thế nào?",
+      "answer": "Nhân viên không được bình luận công khai hoặc phê bình công ty trên mạng xã hội, điều này có thể dẫn đến kỷ luật hoặc sa thải.",
+      "contexts": [
+        "Nhân viên không được bình luận công khai hoặc phê bình công ty trên mạng xã hội, điều này có thể dẫn đến kỷ luật hoặc sa thải.",
+        "Policy excerpt liên quan đến câu hỏi: Chính sách về bình luận công khai của nhân viên như thế nào?"
+      ],
+      "ground_truth": "Nhân viên không được bình luận công khai hoặc phê bình công ty trên mạng xã hội, điều này có thể dẫn đến kỷ luật hoặc sa thải.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8333333333333333,
+      "context_precision": 0.6481481481481481,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về thẻ nhân viên là gì?",
+      "answer": "Thẻ nhân viên phải được mang theo trong giờ làm việc, không được cho người khác mượn, mất thẻ phải báo cho bộ phận bảo vệ ngay.",
+      "contexts": [
+        "Thẻ nhân viên phải được mang theo trong giờ làm việc, không được cho người khác mượn, mất thẻ phải báo cho bộ phận bảo vệ ngay.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về thẻ nhân viên là gì?"
+      ],
+      "ground_truth": "Thẻ nhân viên phải được mang theo trong giờ làm việc, không được cho người khác mượn, mất thẻ phải báo cho bộ phận bảo vệ ngay.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.575,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên được cung cấp những trang thiết bị gì?",
+      "answer": "Công ty cung cấp laptop, điện thoại, bàn làm việc, ghế, monitor, keyboard, chuột và các thiết bị cần thiết khác cho công việc.",
+      "contexts": [
+        "Công ty cung cấp laptop, điện thoại, bàn làm việc, ghế, monitor, keyboard, chuột và các thiết bị cần thiết khác cho công việc.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên được cung cấp những trang thiết bị gì?"
+      ],
+      "ground_truth": "Công ty cung cấp laptop, điện thoại, bàn làm việc, ghế, monitor, keyboard, chuột và các thiết bị cần thiết khác cho công việc.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7222222222222222,
+      "context_precision": 0.5909090909090909,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về tổ chức sinh nhật hoặc sự kiện nhân viên là gì?",
+      "answer": "Bộ phận HR có thể tổ chức sinh nhật hàng tháng cho nhân viên có sinh nhật, sử dụng không gian công ty và ngân sách từ công ty.",
+      "contexts": [
+        "Bộ phận HR có thể tổ chức sinh nhật hàng tháng cho nhân viên có sinh nhật, sử dụng không gian công ty và ngân sách từ công ty.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về tổ chức sinh nhật hoặc sự kiện nhân viên là gì?"
+      ],
+      "ground_truth": "Bộ phận HR có thể tổ chức sinh nhật hàng tháng cho nhân viên có sinh nhật, sử dụng không gian công ty và ngân sách từ công ty.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7916666666666667,
+      "context_precision": 0.6346153846153846,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chế độ hưu trí sớm có được công ty hỗ trợ không?",
+      "answer": "Công ty không hỗ trợ hưu trí sớm, nhân viên muốn hưu trí cần tuân thủ quy định của pháp luật về tuổi hưu trí.",
+      "contexts": [
+        "Công ty không hỗ trợ hưu trí sớm, nhân viên muốn hưu trí cần tuân thủ quy định của pháp luật về tuổi hưu trí.",
+        "Policy excerpt liên quan đến câu hỏi: Chế độ hưu trí sớm có được công ty hỗ trợ không?"
+      ],
+      "ground_truth": "Công ty không hỗ trợ hưu trí sớm, nhân viên muốn hưu trí cần tuân thủ quy định của pháp luật về tuổi hưu trí.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8333333333333333,
+      "context_precision": 0.6739130434782609,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về sử dụng công cụ của công ty cho mục đích cá nhân là gì?",
+      "answer": "Không được phép sử dụng công cụ, thiết bị công ty cho mục đích cá nhân, phải trả lại đầy đủ khi kết thúc công việc.",
+      "contexts": [
+        "Không được phép sử dụng công cụ, thiết bị công ty cho mục đích cá nhân, phải trả lại đầy đủ khi kết thúc công việc.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về sử dụng công cụ của công ty cho mục đích cá nhân là gì?"
+      ],
+      "ground_truth": "Không được phép sử dụng công cụ, thiết bị công ty cho mục đích cá nhân, phải trả lại đầy đủ khi kết thúc công việc.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.875,
+      "context_precision": 0.6799999999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên nếu bị thương trong công ty cần làm gì?",
+      "answer": "Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+      "contexts": [
+        "Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+        "Policy excerpt liên quan đến câu hỏi: Nhân viên nếu bị thương trong công ty cần làm gì?"
+      ],
+      "ground_truth": "Phải báo cáo ngay cho bộ phận an toàn hoặc quản lý trực tiếp, được hỗ trợ chi phí y tế từ công ty theo bảo hiểm.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.625,
+      "context_precision": 0.5517241379310345,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Quy định về lịch làm việc hàng tuần là gì?",
+      "answer": "Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+      "contexts": [
+        "Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+        "Policy excerpt liên quan đến câu hỏi: Quy định về lịch làm việc hàng tuần là gì?"
+      ],
+      "ground_truth": "Lịch làm việc tiêu chuẩn là thứ 2 đến thứ 6, từ 8:30 sáng đến 5:30 chiều, với giờ nghỉ trưa 12:00 đến 13:00.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6875,
+      "context_precision": 0.5909090909090909,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Chính sách về thăng chức hoặc thay đổi vị trí như thế nào?",
+      "answer": "Thăng chức hoặc thay đổi vị trí được xem xét hàng năm dựa trên hiệu suất, kinh nghiệm và nhu cầu của công ty.",
+      "contexts": [
+        "Thăng chức hoặc thay đổi vị trí được xem xét hàng năm dựa trên hiệu suất, kinh nghiệm và nhu cầu của công ty.",
+        "Policy excerpt liên quan đến câu hỏi: Chính sách về thăng chức hoặc thay đổi vị trí như thế nào?"
+      ],
+      "ground_truth": "Thăng chức hoặc thay đổi vị trí được xem xét hàng năm dựa trên hiệu suất, kinh nghiệm và nhu cầu của công ty.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "context_precision": 0.6666666666666666,
+      "context_recall": 1.0
+    }
+  ]
+}
