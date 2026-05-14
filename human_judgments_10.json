@@ -1,0 +1,62 @@
+[
+  {
+    "question_index": 0,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A is complete and explicitly grounded in policy."
+  },
+  {
+    "question_index": 1,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A gives the full probation answer."
+  },
+  {
+    "question_index": 2,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A includes the complete password rotation policy."
+  },
+  {
+    "question_index": 3,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A includes VPN and internal access context."
+  },
+  {
+    "question_index": 4,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A preserves legal-purpose data handling details."
+  },
+  {
+    "question_index": 5,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A includes report channel and do-not-click guidance."
+  },
+  {
+    "question_index": 6,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A includes the medical certificate condition."
+  },
+  {
+    "question_index": 7,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A includes portal, lead time, and approval flow."
+  },
+  {
+    "question_index": 8,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A lists all return obligations."
+  },
+  {
+    "question_index": 9,
+    "human_winner": "A",
+    "rater": "human_01",
+    "note": "A includes BYOD approval and security policy."
+  }
+]
